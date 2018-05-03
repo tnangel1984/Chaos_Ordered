@@ -12,4 +12,5 @@ Tech Used:
     postgreSQL, Ruby, Rails, React
 
 Wireframe:
-![wireframe](/Screen Shot 2018-05-03 at 8.20.24 AM.png)
+
+![wireframe](https://github.com/tnangel1984/Chaos_Ordered/commit/00275ce42511c5b526fb173d675a8fa1bca25951#diff-ecf6989df6dac7a7d1c868729d732510)
