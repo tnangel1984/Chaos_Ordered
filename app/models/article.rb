@@ -4,6 +4,7 @@ class Article
     DB = PG.connect(host:"localhost", port:5432, dbname: 'chaos_ordered')
 
     def initialize (opts={})
+        @id=opts["id"].to_i
         @title = opts["title"]
         @author =opts["author"]
         @url= opts["url"]

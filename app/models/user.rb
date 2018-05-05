@@ -1,9 +1,10 @@
 class User
-    attr_reader  :username, :password
+    attr_reader  :id, :username, :password
 
       DB= PG.connect(host:"localhost", port:5432, dbname:'chaos_ordered')
 
     def initialize (opts={})
+        @id = opts["id"].to_i
         @username = opts["username"]
         @password = opts["password"]
         # @articles = opts["article-id"].to_i
@@ -27,18 +28,18 @@ class User
         results = DB.exec(
             <<-SQL
                 SELECT * FROM users
-                WHERE id=#{id}
+                WHERE id=#{id};
             SQL
         )
         return User.new(results.first)
     end
 
-    def self.create
+    def self.create opts
         results = DB.exec(
             <<-SQL
                 INSERT INTO users (username, password)
                 VALUES('#{opts["username"]}', '#{opts["password"]}')
-                RETURNING id, username, passwords
+                RETURNING id, username, password;
             SQL
         )
         return User.new(results.first)
@@ -48,19 +49,21 @@ class User
         results=DB.exec(
             <<-SQL
                 UPDATE users
-                SET username='#{opts["username"]}', password = #{opts["password"]}
-                RETURNING id, username, password
+                SET username='#{opts["username"]}', password = '#{opts["password"]}'
+                WHERE id = #{id}
+                RETURNING id, username, password;
             SQL
         )
         return User.new(results.first)
     end
 
-    def self.delete
+    def self.delete id
         results = DB.exec(
             <<-SQL
-                DELETE FROM users 
+                DELETE FROM users
                 WHERE id=#{id}
             SQL
         )
+        return {deleted:true}
     end
 end

@@ -1353,3 +1353,349 @@ Processing by UsersController#index as */*
 Completed 200 OK in 8ms (Views: 0.4ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:13:14 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 14ms (Views: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:13:20 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "id" does not exist
+LINE 2:                 WHERE id=1
+                              ^
+):
+  
+app/models/user.rb:27:in `exec'
+app/models/user.rb:27:in `find'
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:17:02 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "id" does not exist
+LINE 2:                 WHERE id=1
+                              ^
+):
+  
+app/models/user.rb:27:in `exec'
+app/models/user.rb:27:in `find'
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:21:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 13ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "id" does not exist
+LINE 2:                 WHERE id=1
+                              ^
+):
+  
+app/models/user.rb:28:in `exec'
+app/models/user.rb:28:in `find'
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:25:45 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 13ms (Views: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:26:03 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:27:20 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/user.rb:37:in `create'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:28:25 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "passwords" does not exist
+LINE 3:                 RETURNING id, username, passwords;
+                                                ^
+HINT:  Perhaps you meant to reference the column "users.password".
+):
+  
+app/models/user.rb:38:in `exec'
+app/models/user.rb:38:in `create'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:28:39 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:29:20 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:30:06 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Sponge", "password"=>"[FILTERED]", "user"=>{"username"=>"Sponge", "password"=>"[FILTERED]"}}
+Completed 200 OK in 6ms (Views: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:30:17 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"TEST", "password"=>"[FILTERED]", "user"=>{"username"=>"TEST", "password"=>"[FILTERED]"}}
+Completed 200 OK in 8ms (Views: 0.6ms)
+
+
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:30:26 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "taur" does not exist
+LINE 2:                 SET username='Mino', password = Taur
+                                                        ^
+):
+  
+app/models/user.rb:49:in `exec'
+app/models/user.rb:49:in `update'
+app/controllers/users_controller.rb:17:in `update'
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:30:30 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:32:32 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "taur" does not exist
+LINE 2:                 SET username='Mino', password = Taur
+                                                        ^
+):
+  
+app/models/user.rb:49:in `exec'
+app/models/user.rb:49:in `update'
+app/controllers/users_controller.rb:17:in `update'
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:32:53 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "'username'"
+LINE 2:                 SET 'username'='Mino', 'password' = Taur
+                            ^
+):
+  
+app/models/user.rb:49:in `exec'
+app/models/user.rb:49:in `update'
+app/controllers/users_controller.rb:17:in `update'
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:33:17 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:52: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...password = '#{opts["password"]'}
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:52: unterminated string meets end of file):
+  
+app/models/user.rb:52: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/models/user.rb:52: unterminated string meets end of file
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:33:47 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:33:52 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:34:02 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/users/4"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:35:38 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/users/:id' to: 'users#delete'
+                      ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories' to: 'categories#index'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id' to: 'categories#show'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+post '/categories' to: 'categories#create'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+put '/categories/:id' to: 'categories#update'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/categories/:id' to: 'categories#delete'
+                           ^):
+  
+config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:40:00 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id,' to: 'categories#show'
+                         ^):
+  
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:40:23 -0400
+Processing by UsersController#delete as */*
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/user.rb:60:in `delete'
+app/controllers/users_controller.rb:21:in `delete'
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:41:28 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:41:54 -0400
+Processing by UsersController#delete as */*
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 11ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:41:59 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
