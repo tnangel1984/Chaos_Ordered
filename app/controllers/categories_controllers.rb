@@ -1,8 +1,9 @@
 class CategoriesController < ApplicationController
     skip_before_action :verify_authenticity_token
+
     def index
         render json: Categories.all
-    render
+    end
 
     def show
         render json: Categories.find(params["id"])
@@ -14,4 +15,9 @@ class CategoriesController < ApplicationController
 
     def update
         render json: Categories.update(params["id"],params["category"])
+    end
+
+    def delete
+        render json: Categories.delete(params["id"])
+    end
 end
