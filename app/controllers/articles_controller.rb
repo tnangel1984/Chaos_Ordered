@@ -4,19 +4,20 @@ class ArticlesController < ApplicationController
     def index
         render json: Article.all
     end
+
+    def show
+        render json: Article.find(params["id"])
+    end
+
+    def create
+        render json: Article.create(params["article"])
+    end
+
+    def update
+        render json: Article.update(params["id"], params["article"])
+    end
+
+    def delete
+        render json: Article.delete(params["id"])
+    end
 end
-#     def show
-#         render json: Articles.find(params["id"])
-#     end
-#
-#     def create
-#         render json: Articles.create(params["article"])
-#     end
-#
-#     def delete
-#         render json: Articles.delete(params["id"])
-#     end
-#
-#     def update
-#         render json: Articles.update(params["id"], params["article"])
-#     end

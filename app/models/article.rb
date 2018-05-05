@@ -3,11 +3,11 @@ class Article
 
     DB = PG.connect(host:"localhost", port:5432, dbname: 'chaos_ordered')
 
-    def initialize (opts)
+    def initialize (opts={})
         @title = opts["title"]
         @author =opts["author"]
         @url= opts["url"]
-        @url_image =opts["url"]
+        @url_image =opts["image_url"]
         @source_name=opts["source_name"]
         @date_published=opts["date_published"]
         @summary=opts["summary"]
@@ -20,4 +20,46 @@ class Article
 
     end
 
+    def self.find(id)
+        results = DB.exec(
+            <<-SQL
+                SELECT * FROM articles
+                WHERE id=#{id};
+            SQL
+        )
+        return Article.new(results.first)
+    end
+
+    def self.create(opts)
+        results = DB.exec(
+            <<-SQL
+                INSERT INTO articles (title, author, url, url_image,source_name, date_published, summary)
+                VALUES('#{opts["title"]}', '#{opts["author"]}', '{opts["url"]}', '{opts["image"]}', '{opts["source_name"]}', 'opts["date_published"]', 'opts["summary"]')
+                RETURNING id, title, author, url, url_image, source_name, date_published, summary;
+            SQL
+        )
+        return Article.new(results.first)
+
+    def self.update(id, opts)
+        results = DB.exec(
+            <<-SQL
+                UPDATE articles
+                SET (title = '#{opts["title"]}', '#{opts["author"]}', '#{opts["url"]}', '#{opts["image_url"]}', '#{opts["source_name"]}', '#{opts["date_published"]}', '#{opts["summary"]}')
+                WHERE id = #{id}
+                RETURNING id, title, author, url, image_url, source_name, date_published, summary;
+
+            SQL
+        )
+        return Articles.new(results.first)
+    end
+
+    def self.delet(id)
+        results = DB.exec(
+            <<-SQL
+                DELETE FROM articles
+                WHERE id=#{id};
+            SQL
+        )
+        return {deleted: true}
+    end
 end

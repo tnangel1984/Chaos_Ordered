@@ -595,3 +595,46 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 7ms (Views: 0.4ms)
 
 
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 11:30:17 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 66ms (Views: 4.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:31:09 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 11ms
+
+
+  
+NameError (undefined local variable or method `results' for Article:Class):
+  
+app/models/article.rb:28:in `find'
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:32:04 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+        results = DB.exec(
+               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:33: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/article.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/article.rb:33: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:32:12 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 21ms (Views: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:32:20 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
