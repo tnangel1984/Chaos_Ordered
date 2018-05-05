@@ -1106,3 +1106,250 @@ Processing by ArticlesController#index as */*
 Completed 200 OK in 1ms (Views: 0.4ms)
 
 
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 14:22:03 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users/:id', :to 'users#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post 'users', :to 'users#create'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/users/:id', :to 'users#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+delete '/users:id' :to 'users#delete'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+get '/categories' :to 'categories#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+get '/categories/:id' :to 'categories#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+post '/categories' :to 'categories#create'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+put '/categories/:id' :to 'categories#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+delete '/categories/:id' :to 'categories#delete'
+                          ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:22:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:27:58 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users/:id', :to 'users#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post 'users', :to 'users#create'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/users/:id', :to 'users#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+delete '/users:id' :to 'users#delete'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+get '/categories' :to 'categories#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+get '/categories/:id' :to 'categories#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+post '/categories' :to 'categories#create'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+put '/categories/:id' :to 'categories#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+delete '/categories/:id' :to 'categories#delete'
+                          ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:30:53 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users/:id', :to 'users#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post 'users', :to 'users#create'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/users/:id', :to 'users#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+delete '/users:id' :to 'users#delete'
+                    ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:31:22 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:33:18 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/users:id' to: 'users#delete'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories' to: 'categories#index'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id' to: 'categories#show'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+post '/categories' to: 'categories#create'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+put '/categories/:id' to: 'categories#update'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/categories/:id' to: 'categories#delete'
+                           ^):
+  
+config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:33:47 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/users/:id' to: 'users#delete'
+                      ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories' to: 'categories#index'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id' to: 'categories#show'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+post '/categories' to: 'categories#create'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+put '/categories/:id' to: 'categories#update'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/categories/:id' to: 'categories#delete'
+                           ^):
+  
+config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:34:02 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 10ms (Views: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:34:17 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/controllers/users_controller.rb:8: syntax error, unexpected keyword_end, expecting ')'
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/controllers/users_controller.rb:12: syntax error, unexpected keyword_end, expecting ')'
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/controllers/users_controller.rb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:8: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/users_controller.rb:12: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:35:24 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:36:08 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 7ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:40:09 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:42:46 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 8ms
+
+
+  
+TypeError (#<PG::Connection:0x007fa7fc5ac4f8> is not a symbol nor a string):
+  
+app/models/user.rb:2:in `attr_reader'
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:42:58 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
