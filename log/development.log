@@ -638,3 +638,471 @@ Processing by ArticlesController#show as */*
 Completed 200 OK in 1ms (Views: 0.2ms)
 
 
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 12:21:46 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:65: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/article.rb:65: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 12:22:24 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 11ms (Views: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 12:22:29 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:22:34 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:23:08 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:23:52 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:24:36 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 12:24:49 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-05 12:24:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:25:53 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 200 OK in 19ms (Views: 0.4ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 12:26:02 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:41:30 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 12:41:41 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 12:41:51 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-05-05 12:41:54 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/models/article.rb:7:in `initialize'
+app/models/article.rb:32:in `new'
+app/models/article.rb:32:in `find'
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 12:42:01 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 12:42:13 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:43:36 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Here Are 5 Things to Watch For at the 2018 Berkshire Hathaway Shareholder Meeting", "author"=>"Lucinda Shen", "url"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "url_image"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "source_name"=>"Fortune", "date_published"=>"2018-05-04T23:35:46Z", "summary"=>nil, "id"=>"3", "article"=>{"title"=>"Here Are 5 Things to Watch For at the 2018 Berkshire Hathaway Shareholder Meeting", "author"=>"Lucinda Shen", "url"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "url_image"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "source_name"=>"Fortune", "date_published"=>"2018-05-04T23:35:46Z", "summary"=>nil}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title = 'Here Are 5 Things to Watch For...
+                                   ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:43:56 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title = 'Waymo self-driving minivan inv...
+                                   ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:45:28 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title = 'Waymo self-driving minivan inv...
+                                   ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:45:53 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:49:41 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:50:43 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 12:50:55 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:52:13 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:52:23 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 12:52:27 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 12:52:30 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:58:21 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 200 OK in 9ms (Views: 0.3ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 12:59:04 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 13:00:53 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"3", "article"=>{"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 13:02:01 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"3", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 13:03:22 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 7ms (Views: 0.3ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:03:37 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"2", "article"=>{"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 13:03:47 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 13:03:56 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:05:52 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 13:06:32 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:07:00 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 13:07:07 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 13:07:12 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 13:07:16 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 13:07:20 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:18:47 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it@?@s headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it@?@s headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:19:01 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it@?@ll hold off on planned expansion in standoff with city where it@?@s headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it@?@ll hold off on planned expansion in standoff with city where it@?@s headquartered"}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 13:19:19 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 1.5ms)
+
+
+Started DELETE "/articles/2" for 127.0.0.1 at 2018-05-05 13:19:32 -0400
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.2ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 13:19:37 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+

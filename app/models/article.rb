@@ -7,11 +7,12 @@ class Article
         @title = opts["title"]
         @author =opts["author"]
         @url= opts["url"]
-        @url_image =opts["image_url"]
+        @image_url =opts["image_url"]
         @source_name=opts["source_name"]
         @date_published=opts["date_published"]
         @summary=opts["summary"]
     end
+
 
     def self.all
         results = DB.exec("SELECT * FROM articles;")
@@ -19,6 +20,7 @@ class Article
         return results.map{|result| Article.new(result)}
 
     end
+
 
     def self.find(id)
         results = DB.exec(
@@ -30,30 +32,34 @@ class Article
         return Article.new(results.first)
     end
 
+
     def self.create(opts)
         results = DB.exec(
             <<-SQL
-                INSERT INTO articles (title, author, url, url_image,source_name, date_published, summary)
-                VALUES('#{opts["title"]}', '#{opts["author"]}', '{opts["url"]}', '{opts["image"]}', '{opts["source_name"]}', 'opts["date_published"]', 'opts["summary"]')
-                RETURNING id, title, author, url, url_image, source_name, date_published, summary;
+                INSERT INTO articles (title, author, url, image_url,source_name, date_published, summary)
+                VALUES('#{opts["title"]}', '#{opts["author"]}', '#{opts["url"]}', '#{opts["image_url"]}', '#{opts["source_name"]}', '#{opts["date_published"]}', '#{opts["summary"]}')
+                RETURNING id, title, author, url, image_url, source_name, date_published, summary;
             SQL
         )
         return Article.new(results.first)
+    end
+
 
     def self.update(id, opts)
         results = DB.exec(
             <<-SQL
                 UPDATE articles
-                SET (title = '#{opts["title"]}', '#{opts["author"]}', '#{opts["url"]}', '#{opts["image_url"]}', '#{opts["source_name"]}', '#{opts["date_published"]}', '#{opts["summary"]}')
+                SET title='#{opts["title"]}', author='#{opts["author"]}', url='#{opts["url"]}', image_url='#{opts["image_url"]}', source_name='#{opts["source_name"]}', date_published='#{opts["date_published"]}', summary='#{opts["summary"]}'
                 WHERE id = #{id}
                 RETURNING id, title, author, url, image_url, source_name, date_published, summary;
 
             SQL
         )
-        return Articles.new(results.first)
+        return Article.new(results.first)
     end
 
-    def self.delet(id)
+
+    def self.delete(id)
         results = DB.exec(
             <<-SQL
                 DELETE FROM articles

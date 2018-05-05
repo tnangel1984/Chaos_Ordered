@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-# #This says that whenever a user visits /people, use the People controller and use the index "action" (or method).
+# #This says that whenever a user visits /people, use the Article controller and use the index "action" (or method).
 get '/articles', to: 'articles#index'
 get '/articles/:id', to: 'articles#show'
 post '/articles', to: 'articles#create'
