@@ -1,0 +1,597 @@
+Started GET "/articles" for 127.0.0.1 at 2018-05-04 23:54:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-04 23:57:19 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles/:id', :to 'articles#show'
+                          ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post '/articles', :to 'articles#create'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/articles/:id', :to 'articles#update'
+                          ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+delete '/articles/:id', :to 'articles#delete'
+                             ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-04 23:57:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-04 23:57:41 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 253ms (Views: 7.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-04 23:57:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-04 23:58:15 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:01:13 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:02:02 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:05:59 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:06:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:06:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:08:45 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant ArticlesController::Articles):
+  
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:09:22 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant ArticlesController::Articles):
+  
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:10:22 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+    attr_reader :title :author :url :urlImage :source...
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...tr_reader :title :author :url :urlImage :source_name :date_p...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...r :url :urlImage :source_name :date_published
+...                               ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:11:05 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (undefined local variable or method `chaos_ordered' for Article:Class):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:11:20 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::ConnectionBad (FATAL:  database "chaos_ordered" does not exist
+):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:14:48 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::ConnectionBad (FATAL:  database "chaos_ordered" does not exist
+):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:17:37 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 26ms
+
+
+  
+NameError (uninitialized constant Article::DB):
+  
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:17:46 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:17:50 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:19:49 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:20:03 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:7: syntax error, unexpected ';', expecting ')'
+        results = DB.exec("SELECT * FROM articles";)
+                                                   ^):
+  
+app/models/article.rb:7: syntax error, unexpected ';', expecting ')'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:20:08 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:26:00 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:17:in `exec'
+app/models/article.rb:17:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:26:57 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:17:in `exec'
+app/models/article.rb:17:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:30:24 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 8ms (Views: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:48:33 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 4ms (Views: 0.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:19:11 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:43:56 -0400
+Processing by ArticlesController#index as */*
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-05 01:44:08 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 11ms (Views: 6.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:44:18 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:44:29 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:44:41 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NameError (uninitialized constant Article::Articles):
+  
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:46:53 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:46:55 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:46:55 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-05 01:46:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:47:36 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+    attr_reader :title :author :url :image_url :sourc...
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...tr_reader :title :author :url :image_url :source_name :date_...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+... :url :image_url :source_name :date_published :summary
+...                               ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:48:03 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+    attr_reader :id :title :author :url :image_url...
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...ttr_reader :id :title :author :url :image_url :source_name :...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...title :author :url :image_url :source_name :date_published :...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+... :source_name :date_published :summary
+...                               ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:48:37 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
