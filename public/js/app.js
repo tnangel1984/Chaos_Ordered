@@ -1,0 +1,9 @@
+ReactDOM.render(
+    <div>
+        <h1>testing</h1>
+        <Newsfeed/>
+        <Category/>
+        <Discussion/>
+    </div>,
+    document.querySelector('main')
+);
