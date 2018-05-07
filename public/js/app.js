@@ -6,10 +6,15 @@ class APImethods extends React.Component{
         super(props)
         this.getArticles=this.getArticles.bind(this)
         this.getArticle=this.getArticle.bind(this)
-        this.addArticleDB=this.addArticle.bind(this)
-        this.updateArticle=this.updateArticle.bind(this)
+        this.addArticleDB=this.addArticleDB.bind(this)
+        this.updateFormSubmit=this.updateFormSubmit.bind(this)
+        this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
-        this.state = { articles:[], article:{}}
+        this.toggleState =this.toggleState.bind(this)
+        this.state = {articles:[], article:{},
+            homeVisible:true, myArticlesVisible:false, oneArticleVisible:false,
+            userRegVisible:false, loginVisible:false, userRegVisible:false
+        }
     }
 
     componentDidMount(){
@@ -32,21 +37,21 @@ class APImethods extends React.Component{
 
 //1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
     addArticleDB(content){
-        fetch('/articles',
-        {   body: JSON.stringify(content),
-             method'POST',
-             headers:{
-                 'Accept': 'application/json, text/plain. */*'
+        fetch('/articles',{
+            body: JSON.stringify(content),
+            method:'POST',
+            headers:{
+                 'Accept': 'application/json, text/plain. */*',
                  'Content-Type': 'application/json'
              }
-        }).then(response=>respons.json())
-        .then(newArticle=>{
-                        newArticles={this.state.articles
-                        newArticles.push(newArticle)
-                        this.setState({this.state.Articles})
-              }
         })
-        .catch(error=>{console.log(error})
+        .then(response=>respons.json())
+        .then(newArticle=>{
+                        newArticles=this.state.articles
+                        newArticles.push(newArticle)
+                        this.setState({articles:newArticles})
+        })
+        .catch(error=>{console.log(error)})
     }
 
     updateFormSubmit(event){
@@ -55,19 +60,19 @@ class APImethods extends React.Component{
     }
 
     updateArticleDB(article){
-        fetch('/articles'+id,
-            {body:JSON.stringify(article)
+        fetch('/articles'+id,{
+            body:JSON.stringify(article),
             method:'PUT',
             headers:{
                 'Accept':'application/json, text/plain, */*',
                 'Content-Type':'application/json'
-            })
-            .then(response=>respnse.json())
-            .then(updatedArticle=>{this.getArticles()})
-            .catch(error=>console.log(error);)
             }
-        )
+        })
+        .then(response=>respnse.json())
+        .then(updatedArticle=>{this.getArticles()})
+        .catch(error=>console.log(error))
     }
+
 
     deleteArticle(id, article){
         fetch('/articles' + id, {method:'DELETE'})
@@ -82,6 +87,25 @@ class APImethods extends React.Component{
     }
 
 
+// ===============================================
+//              CATEGORIES
+// ===============================================
+
+
+
+
+
+
+
+toggleState(str1, str2, str3){
+    str1 = true
+    str2 = false
+    str3 = false
+}
+
+// ===============================================
+                // RENDER
+// ===============================================
     render(){
         console.log(this.state.articles);
 
@@ -90,10 +114,13 @@ class APImethods extends React.Component{
             <Newsfeed/>
             <Category/>
             <Discussion/>
-            <MyArticles
-             articles={this.state.articles}
-             getArticle={this.getArticle}
-             />
+
+            {this.state.myArticlesVisible ?
+                 <MyArticles
+                 articles={this.state.articles}
+                 getArticle={this.getArticle}
+                 />
+             : ""}
          </div>
     }
 }
