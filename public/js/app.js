@@ -4,6 +4,7 @@
 class APImethods extends React.Component{
     constructor(props){
         super(props)
+        this.getHeadLines=this.getHeadLines.bind(this)
         this.getArticles=this.getArticles.bind(this)
         this.getArticle=this.getArticle.bind(this)
         this.addArticleDB=this.addArticleDB.bind(this)
@@ -11,16 +12,37 @@ class APImethods extends React.Component{
         this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {articles:[], article:{},
-            homeVisible:true, myArticlesVisible:false, oneArticleVisible:false,
+        this.state = {articles:[], article:{}, headlines:[],
+            homeVisible:true, myArticlesVisible:false,
+            oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false
         }
     }
 
     componentDidMount(){
         this.getArticles()
+        this.getHeadLines()
     }
 
+// ===============================================
+        //EXTERNAL API NEWS
+// ===============================================
+
+getHeadLines(){
+    fetch('https://newsapi.org/v2/top-headlines?country='+'us'+'&apiKey=ebdd27ee86ff489793262b41ca8b1b23')
+    .then(response=>response.json())
+    .then(headlines=>{this.setState({headlines:headlines}); console.log(this.state.headlines);})
+
+    .catch(error=>console.log(error))
+}
+
+
+
+
+
+// ===============================================
+            //CUSTOM API ARTICLES
+// ===============================================
     getArticles(){
         fetch('/articles')
         .then(response=>response.json())
@@ -110,6 +132,7 @@ toggleState(str1, str2, str3){
         console.log(this.state.articles);
 
         return<div>
+            <Nav toggleState={this.toggleState}/>
             <h1>testAPI</h1>
             <Newsfeed/>
             <Category/>

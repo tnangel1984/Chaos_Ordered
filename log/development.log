@@ -29204,3 +29204,28 @@ Processing by ArticlesController#index as */*
 Completed 200 OK in 2ms (Views: 0.9ms)
 
 
+Started GET "/articles" for 127.0.0.1 at 2018-05-07 15:01:18 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 356ms (Views: 0.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-07 15:02:02 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-07 15:04:36 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-07 15:04:53 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-07 15:07:04 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 12ms (Views: 4.7ms)
+
+
