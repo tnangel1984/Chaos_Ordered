@@ -1,18 +1,25 @@
 
 
 
-class API extends React.Component{
+class APImethods extends React.Component{
     constructor(props){
         super(props)
-
+        this.getArticles=this.getArticles
+        this.getArticle=this.getArticle
+        this.addArticle=this.addArticle
+        this.updateArticle=this.updateArticle
+        this.deleteArticle=this.deleteArticle
         this.state = { articles:[], article:{}}
     }
 
+    componentDidMount(){
+        this.getArticles()
+    }
 
     getArticles(){
         fetch('/articles')
         .then(response=>response.json())
-        .then(data=>this.setState({articles:data}))
+        .then(data=>{this.setState({articles:data})})
         .catch(error=>console.log(error))
     }
 
@@ -34,11 +41,16 @@ class API extends React.Component{
 
 
     render(){
-        getArticles()
-        console.log(this.state);
+        console.log(this.state.articles);
+
         return<div>
             <h1>testAPI</h1>
-
+            <Newsfeed/>
+            <Category/>
+            <Discussion/>
+            <MyArticles
+             articles={this.state.articles}
+             />
          </div>
     }
 }
@@ -47,10 +59,7 @@ class API extends React.Component{
 ReactDOM.render(
     <div>
         <h1>testing</h1>
-        <API/>
-        <Newsfeed/>
-        <Category/>
-        <Discussion/>
+        <APImethods/>
     </div>,
     document.querySelector('main')
 );
