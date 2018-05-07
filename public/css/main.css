@@ -32,3 +32,10 @@ p{  border: 1px solid lightgray;
 
     width: 300px;
 }
+
+/* MY ARTICLES */
+
+.thumbnail{
+    width: 150px;
+    height:200px;
+}

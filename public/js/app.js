@@ -4,11 +4,11 @@
 class APImethods extends React.Component{
     constructor(props){
         super(props)
-        this.getArticles=this.getArticles
-        this.getArticle=this.getArticle
-        this.addArticle=this.addArticle
-        this.updateArticle=this.updateArticle
-        this.deleteArticle=this.deleteArticle
+        this.getArticles=this.getArticles.bind(this)
+        this.getArticle=this.getArticle.bind(this)
+        this.addArticle=this.addArticle.bind(this)
+        this.updateArticle=this.updateArticle.bind(this)
+        this.deleteArticle=this.deleteArticle.bind(this)
         this.state = { articles:[], article:{}}
     }
 
@@ -24,10 +24,12 @@ class APImethods extends React.Component{
     }
 
     getArticle(article){
+        console.log("getArticle executed");
         this.setState({article:article})
+
     }
 
-    createArticle(){
+    addArticle(){
 
     }
 
@@ -50,6 +52,7 @@ class APImethods extends React.Component{
             <Discussion/>
             <MyArticles
              articles={this.state.articles}
+             getArticle={this.getArticle}
              />
          </div>
     }
