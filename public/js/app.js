@@ -38,7 +38,15 @@ class APImethods extends React.Component{
     }
 
     deleteArticle(id, article){
-
+        fetch('/articles' + id, {method:'DELETE'})
+        .then(response.json())
+        .then(data=>{
+            this.setState({
+                articles:[
+                    ...this.state.articles.slice(0,index), ...this.state.articles.slice(index + 1)
+                ]
+            })
+        })
     }
 
 
