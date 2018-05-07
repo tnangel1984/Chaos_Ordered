@@ -1,0 +1,1701 @@
+Started GET "/articles" for 127.0.0.1 at 2018-05-04 23:54:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-04 23:57:19 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles/:id', :to 'articles#show'
+                          ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post '/articles', :to 'articles#create'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/articles/:id', :to 'articles#update'
+                          ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+delete '/articles/:id', :to 'articles#delete'
+                             ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:5: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-04 23:57:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-05-04 23:57:41 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 253ms (Views: 7.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-04 23:57:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-04 23:58:15 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:01:13 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:02:02 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:05:59 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/articles', :to 'articles#index'
+                      ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:06:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:06:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articles"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:08:45 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant ArticlesController::Articles):
+  
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:09:22 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant ArticlesController::Articles):
+  
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:10:22 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+    attr_reader :title :author :url :urlImage :source...
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...tr_reader :title :author :url :urlImage :source_name :date_p...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...r :url :urlImage :source_name :date_published
+...                               ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:11:05 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (undefined local variable or method `chaos_ordered' for Article:Class):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:11:20 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::ConnectionBad (FATAL:  database "chaos_ordered" does not exist
+):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:14:48 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::ConnectionBad (FATAL:  database "chaos_ordered" does not exist
+):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:17:37 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 26ms
+
+
+  
+NameError (uninitialized constant Article::DB):
+  
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:17:46 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:17:50 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:19:49 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:20:03 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:7: syntax error, unexpected ';', expecting ')'
+        results = DB.exec("SELECT * FROM articles";)
+                                                   ^):
+  
+app/models/article.rb:7: syntax error, unexpected ';', expecting ')'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:20:08 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:7:in `exec'
+app/models/article.rb:7:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:26:00 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:17:in `exec'
+app/models/article.rb:17:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:26:57 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::UndefinedTable (ERROR:  relation "articles" does not exist
+LINE 1: SELECT * FROM articles;
+                      ^
+):
+  
+app/models/article.rb:17:in `exec'
+app/models/article.rb:17:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:30:24 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 8ms (Views: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 00:48:33 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 4ms (Views: 0.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:19:11 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:43:56 -0400
+Processing by ArticlesController#index as */*
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/" for 127.0.0.1 at 2018-05-05 01:44:08 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.3.0/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 11ms (Views: 6.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:44:18 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:44:29 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:44:41 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NameError (uninitialized constant Article::Articles):
+  
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:46:53 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:46:55 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:46:55 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/article.rb:19:in `initialize'
+app/models/article.rb:19:in `new'
+app/models/article.rb:19:in `block in all'
+app/models/article.rb:19:in `each'
+app/models/article.rb:19:in `map'
+app/models/article.rb:19:in `all'
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-05 01:46:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:47:36 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+    attr_reader :title :author :url :image_url :sourc...
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...tr_reader :title :author :url :image_url :source_name :date_...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+... :url :image_url :source_name :date_published :summary
+...                               ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:48:03 -0400
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+    attr_reader :id :title :author :url :image_url...
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...ttr_reader :id :title :author :url :image_url :source_name :...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+...title :author :url :image_url :source_name :date_published :...
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+... :source_name :date_published :summary
+...                               ^):
+  
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/models/article.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/controllers/articles_controller.rb:5:in `index'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 01:48:37 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 11:30:17 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 66ms (Views: 4.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:31:09 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 11ms
+
+
+  
+NameError (undefined local variable or method `results' for Article:Class):
+  
+app/models/article.rb:28:in `find'
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:32:04 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+        results = DB.exec(
+               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:33: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/article.rb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/models/article.rb:33: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:32:12 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 21ms (Views: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 11:32:20 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 12:21:46 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/article.rb:65: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/article.rb:65: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 12:22:24 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 11ms (Views: 0.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 12:22:29 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:22:34 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:23:08 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:23:52 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:24:36 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "url_image" of relation "articles" does not exist
+LINE 1: ...        INSERT INTO articles (title, author, url, url_image,...
+                                                             ^
+):
+  
+app/models/article.rb:37:in `exec'
+app/models/article.rb:37:in `create'
+app/controllers/articles_controller.rb:13:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 12:24:49 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-05 12:24:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:25:53 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 200 OK in 19ms (Views: 0.4ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 12:26:02 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:41:30 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 12:41:41 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-05-05 12:41:51 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-05-05 12:41:54 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/models/article.rb:7:in `initialize'
+app/models/article.rb:32:in `new'
+app/models/article.rb:32:in `find'
+app/controllers/articles_controller.rb:9:in `show'
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 12:42:01 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 12:42:13 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:43:36 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Here Are 5 Things to Watch For at the 2018 Berkshire Hathaway Shareholder Meeting", "author"=>"Lucinda Shen", "url"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "url_image"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "source_name"=>"Fortune", "date_published"=>"2018-05-04T23:35:46Z", "summary"=>nil, "id"=>"3", "article"=>{"title"=>"Here Are 5 Things to Watch For at the 2018 Berkshire Hathaway Shareholder Meeting", "author"=>"Lucinda Shen", "url"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "url_image"=>"http://fortune.com/2018/05/04/berkshire-hathaway-buffett-meeting-5-things/", "source_name"=>"Fortune", "date_published"=>"2018-05-04T23:35:46Z", "summary"=>nil}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title = 'Here Are 5 Things to Watch For...
+                                   ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:43:56 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title = 'Waymo self-driving minivan inv...
+                                   ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:45:28 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title = 'Waymo self-driving minivan inv...
+                                   ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:45:53 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:49:41 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started POST "/articles" for 127.0.0.1 at 2018-05-05 12:50:43 -0400
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 12:50:55 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:52:13 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:52:23 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "="
+LINE 2:                 SET (title='Waymo self-driving minivan invol...
+                                  ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 12:52:27 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 12:52:30 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 12:58:21 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations", "id"=>"3", "article"=>{"title"=>"Waymo self-driving minivan involved in crash in Arizona!", "author"=>"Andrew J. Hawkin", "url"=>"https://www.theverge.com/2018/5/4/17320936/waymo-self-driving-car-crash-arizona", "image_url"=>"https://cdn.vox-cdn.com/thumbor/PbwLGfofm_n_4e4vVnVXOibkwvI=/0x412:5760x3428/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/9933153/waymoCastle_28.jpg", "source_name"=>"The Verge", "date_published"=>"2018-05-04T20:52:39Z", "summary"=>"A self-driving vehicle operated by Waymo was involved in a crash in Chandler, Arizona, on Friday afternoon, according to local news stations"}}
+Completed 200 OK in 9ms (Views: 0.3ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 12:59:04 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 13:00:53 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"3", "article"=>{"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/3" for 127.0.0.1 at 2018-05-05 13:02:01 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"3", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 13:03:22 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 7ms (Views: 0.3ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:03:37 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"2", "article"=>{"url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 13:03:47 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 13:03:56 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:05:52 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 13:06:32 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:07:00 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it's headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started GET "/articles" for 127.0.0.1 at 2018-05-05 13:07:07 -0400
+Processing by ArticlesController#index as HTML
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 13:07:12 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-05-05 13:07:16 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-05-05 13:07:20 -0400
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:18:47 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it@?@s headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it'll hold off on planned expansion in standoff with city where it@?@s headquartered"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "ll"
+LINE 2: ...5-04T20:58:00Z', summary='Online retailer says it'll hold of...
+                                                             ^
+):
+  
+app/models/article.rb:49:in `exec'
+app/models/article.rb:49:in `update'
+app/controllers/articles_controller.rb:17:in `update'
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 13:19:01 -0400
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it@?@ll hold off on planned expansion in standoff with city where it@?@s headquartered", "id"=>"2", "article"=>{"title"=>"Amazon plays hardball with Seattle over \"eat the rich\" tax!", "author"=>"Kate Gibson", "url"=>"https://www.cbsnews.com/news/amazon-plays-hardball-with-seattle-over-employee-tax-proposal/", "image_url"=>"https://cbsnews3.cbsistatic.com/hub/i/r/2018/01/26/06ff5d94-a6bd-4483-b5ab-f8eb93753b4f/thumbnail/1200x630/925e67a6d515e271e89b8500ae9e6ce7/spheres.jpg", "source_name"=>"CBS News", "date_published"=>"2018-05-04T20:58:00Z", "summary"=>"Online retailer says it@?@ll hold off on planned expansion in standoff with city where it@?@s headquartered"}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 13:19:19 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 2ms (Views: 1.5ms)
+
+
+Started DELETE "/articles/2" for 127.0.0.1 at 2018-05-05 13:19:32 -0400
+Processing by ArticlesController#delete as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.2ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 13:19:37 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started PUT "/articles/2" for 127.0.0.1 at 2018-05-05 14:22:03 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users/:id', :to 'users#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post 'users', :to 'users#create'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/users/:id', :to 'users#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+delete '/users:id' :to 'users#delete'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+get '/categories' :to 'categories#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+get '/categories/:id' :to 'categories#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+post '/categories' :to 'categories#create'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+put '/categories/:id' :to 'categories#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+delete '/categories/:id' :to 'categories#delete'
+                          ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:22:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:27:58 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users/:id', :to 'users#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post 'users', :to 'users#create'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/users/:id', :to 'users#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+delete '/users:id' :to 'users#delete'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+get '/categories' :to 'categories#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+get '/categories/:id' :to 'categories#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+post '/categories' :to 'categories#create'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+put '/categories/:id' :to 'categories#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+delete '/categories/:id' :to 'categories#delete'
+                          ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:17: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:18: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:19: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:20: syntax error, unexpected ':', expecting keyword_end
+config/routes.rb:21: syntax error, unexpected ':', expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:30:53 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users/:id', :to 'users#show'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+post 'users', :to 'users#create'
+                   ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+put '/users/:id', :to 'users#update'
+                       ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+delete '/users:id' :to 'users#delete'
+                    ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:12: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:15: syntax error, unexpected ':', expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:31:22 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+get '/users', :to 'users#index'
+                   ^):
+  
+config/routes.rb:11: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:33:18 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/users:id' to: 'users#delete'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories' to: 'categories#index'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id' to: 'categories#show'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+post '/categories' to: 'categories#create'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+put '/categories/:id' to: 'categories#update'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/categories/:id' to: 'categories#delete'
+                           ^):
+  
+config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:33:47 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/users/:id' to: 'users#delete'
+                      ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories' to: 'categories#index'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id' to: 'categories#show'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+post '/categories' to: 'categories#create'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+put '/categories/:id' to: 'categories#update'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/categories/:id' to: 'categories#delete'
+                           ^):
+  
+config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/" for 127.0.0.1 at 2018-05-05 14:34:02 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 10ms (Views: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:34:17 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/controllers/users_controller.rb:8: syntax error, unexpected keyword_end, expecting ')'
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/controllers/users_controller.rb:12: syntax error, unexpected keyword_end, expecting ')'
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/controllers/users_controller.rb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:8: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/users_controller.rb:12: syntax error, unexpected keyword_end, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:35:24 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:36:08 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 7ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:40:09 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:42:46 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 8ms
+
+
+  
+TypeError (#<PG::Connection:0x007fa7fc5ac4f8> is not a symbol nor a string):
+  
+app/models/user.rb:2:in `attr_reader'
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:3:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-05 14:42:58 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:13:14 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 14ms (Views: 0.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:13:20 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "id" does not exist
+LINE 2:                 WHERE id=1
+                              ^
+):
+  
+app/models/user.rb:27:in `exec'
+app/models/user.rb:27:in `find'
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:17:02 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "id" does not exist
+LINE 2:                 WHERE id=1
+                              ^
+):
+  
+app/models/user.rb:27:in `exec'
+app/models/user.rb:27:in `find'
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:21:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 13ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "id" does not exist
+LINE 2:                 WHERE id=1
+                              ^
+):
+  
+app/models/user.rb:28:in `exec'
+app/models/user.rb:28:in `find'
+app/controllers/users_controller.rb:7:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-05 16:25:45 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 13ms (Views: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:26:03 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.6) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.6) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.6) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.6) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.6) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.6) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:27:20 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/user.rb:37:in `create'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:28:25 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "passwords" does not exist
+LINE 3:                 RETURNING id, username, passwords;
+                                                ^
+HINT:  Perhaps you meant to reference the column "users.password".
+):
+  
+app/models/user.rb:38:in `exec'
+app/models/user.rb:38:in `create'
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:28:39 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Jimmy", "password"=>"[FILTERED]", "user"=>{"username"=>"Jimmy", "password"=>"[FILTERED]"}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:29:20 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:30:06 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"Sponge", "password"=>"[FILTERED]", "user"=>{"username"=>"Sponge", "password"=>"[FILTERED]"}}
+Completed 200 OK in 6ms (Views: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-05-05 16:30:17 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"TEST", "password"=>"[FILTERED]", "user"=>{"username"=>"TEST", "password"=>"[FILTERED]"}}
+Completed 200 OK in 8ms (Views: 0.6ms)
+
+
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:30:26 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "taur" does not exist
+LINE 2:                 SET username='Mino', password = Taur
+                                                        ^
+):
+  
+app/models/user.rb:49:in `exec'
+app/models/user.rb:49:in `update'
+app/controllers/users_controller.rb:17:in `update'
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:30:30 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:32:32 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "taur" does not exist
+LINE 2:                 SET username='Mino', password = Taur
+                                                        ^
+):
+  
+app/models/user.rb:49:in `exec'
+app/models/user.rb:49:in `update'
+app/controllers/users_controller.rb:17:in `update'
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:32:53 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "'username'"
+LINE 2:                 SET 'username'='Mino', 'password' = Taur
+                            ^
+):
+  
+app/models/user.rb:49:in `exec'
+app/models/user.rb:49:in `update'
+app/controllers/users_controller.rb:17:in `update'
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:33:17 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:52: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+...password = '#{opts["password"]'}
+...                               ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:52: unterminated string meets end of file):
+  
+app/models/user.rb:52: syntax error, unexpected tSTRING_BEG, expecting tSTRING_DEND
+app/models/user.rb:52: unterminated string meets end of file
+Started PUT "/users/4" for 127.0.0.1 at 2018-05-05 16:33:47 -0400
+Processing by UsersController#update as */*
+  Parameters: {"username"=>"Mino", "password"=>"[FILTERED]", "id"=>"4", "user"=>{"username"=>"Mino", "password"=>"[FILTERED]"}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:33:52 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:34:02 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/users/4"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:35:38 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/users/:id' to: 'users#delete'
+                      ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories' to: 'categories#index'
+                    ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id' to: 'categories#show'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+post '/categories' to: 'categories#create'
+                     ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+put '/categories/:id' to: 'categories#update'
+                        ^
+/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+delete '/categories/:id' to: 'categories#delete'
+                           ^):
+  
+config/routes.rb:15: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:19: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:20: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:21: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:40:00 -0400
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+get '/categories/:id,' to: 'categories#show'
+                         ^):
+  
+config/routes.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:40:23 -0400
+Processing by UsersController#delete as */*
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/models/user.rb:60:in `delete'
+app/controllers/users_controller.rb:21:in `delete'
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:41:28 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started DELETE "/users/4" for 127.0.0.1 at 2018-05-05 16:41:54 -0400
+Processing by UsersController#delete as */*
+  Parameters: {"id"=>"4"}
+Completed 200 OK in 11ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-05 16:41:59 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
