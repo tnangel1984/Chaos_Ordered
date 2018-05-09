@@ -31,7 +31,7 @@ class APImethods extends React.Component{
 getHeadLines(){
     fetch('https://newsapi.org/v2/top-headlines?country='+'us'+'&apiKey=ebdd27ee86ff489793262b41ca8b1b23')
     .then(response=>response.json())
-    .then(headlines=>{this.setState({headlines:headlines}); console.log(this.state.headlines);})
+    .then(headlines=>{this.setState({headlines:headlines.articles}); console.log(this.state.headlines);})
 
     .catch(error=>console.log(error))
 }
@@ -134,7 +134,7 @@ toggleState(str1, str2, str3){
         return<div>
             <Nav toggleState={this.toggleState}/>
             <h1>testAPI</h1>
-            <Newsfeed/>
+            <Newsfeed headlines={this.state.headlines}/>
             <Category/>
             <Discussion/>
 
