@@ -131,12 +131,10 @@ toggleState(str1, str2, str3){
     render(){
         console.log(this.state.articles);
 
-        return<div>
+        return<div className="master">
             <Nav toggleState={this.toggleState}/>
-            <h1>testAPI</h1>
             <Newsfeed headlines={this.state.headlines}/>
-            <Category/>
-            <Discussion/>
+
 
             {this.state.myArticlesVisible ?
                  <MyArticles
@@ -150,8 +148,7 @@ toggleState(str1, str2, str3){
 
 
 ReactDOM.render(
-    <div>
-        <h1>testing</h1>
+    <div className="master">
         <APImethods/>
     </div>,
     document.querySelector('main')

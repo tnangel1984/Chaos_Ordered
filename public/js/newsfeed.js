@@ -2,32 +2,45 @@
 class Newsfeed extends React.Component{
     render(){
         console.log(this.props.headlines)
-        return <div>
-            <h1>Newsfeed</h1>
-            <div>
+        return <div className="container-fluid master master_container">
+                <div className="row ">
+                    <Discussion className="col-3"/>
 
-        {this.props.headlines.map((headline, index)=>{
-            return <div className = "article_container">
-            <div className="Headline">{headline.title}</div>
-            <div className="summary">{headline.description}</div>
-                   <div className ="image">
-                       <img className="image" src={headline.urlToImage}></img>
-                   </div>
-                   <div className ="category_bar">
-                       <p>Economics</p>
-                       <p>Poverty</p>
-                       <p>Custom</p>
-                   </div>
-                   <div className ="action_bar">
-                       <button>bump</button>
-                       <button>store</button>
-                       <button>comment</button>
-                       <button>share</button>
-                   </div>
+                    <div className="col-6 headline_containter">
+                        {this.props.headlines.map((headline, index)=>{
+                            return <div className = "article_container ">
+                                <div className="headline_container">
+                                    <h3 className="headline">{headline.title}</h3>
 
-                   </div>
-                })}
-            </div>
+                                    <div className ="img_container">
+                                       <img className="img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
+                                    </div>
+
+                                    <div className="summary">{headline.description}
+                                    <div className ="category_bar">
+                                       <p>Economics</p>
+                                       <p>Poverty</p>
+                                       <p>Custom</p>
+                                    </div>
+                                    </div>
+
+
+                                    <div className ="action_bar">
+                                       <button>bump</button>
+                                       <button>store</button>
+                                       <button>comment</button>
+                                       <button>share</button>
+                                    </div>
+                                </div>
+                            </div>
+                        })}
+                    </div>
+
+                    <Category className="col-3"/>
+
+                </div>
+
+
         </div>
     }
 }

@@ -1,32 +1,92 @@
-
-div{border: 1px solid gold;
-    text-align: center;
-    margin: 5%;
+.body{margin: 0 5%}
+.master{
+    margin: 0;
+}
+.discussion_container, .headline_containter, .category_container{
+    margin: 0;
 }
 
-p{  border: 1px solid lightgray;
-    display: inline;
-    margin: 1%;
-}
 
-.image{
-    height: 300px;
-}
+
+
+/*  ==================================================== */
+/*                          NAV BAR                      */
+/*  ==================================================== */
+    .nav_container{
+        background-color: #5B2C6F   ;
+        color: white;
+    }
+    .nav1{text-align:left;}
+    .nav2{margin-left: 65%;}
+    .nav-item{
+        padding:15px;
+    }
+    .show>.nav-pills, .nav-link.active{
+        background-color:  #BB8FCE
+    }
+
+/*  ==================================================== */
+/*                      NEWSFEED                      */
+/*  ==================================================== */
+
+    .master_container{
+        padding: 0 20px;
+        margin-top: 50px;
+        border: 1px solid blue;
+    }
+    .article_container{
+        /* padding:25px 0; */
+        border:1px solid slategray;
+    }
+
+    .headline_container{
+        padding 0 2%;
+    }
+
+    .headline, h2, h3{
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }
+
+    .img_container{
+        margin: 2% 5%;
+
+    }
+
+    .img-fluid{
+        margin:0 auto;
+        text-align: center;
+        padding: 0 5% ;
+    }
+
+
+
+    .category_bar{
+
+    }
+    .category_bar>p{  border: 1px solid lightgray;
+        display: inline;
+        margin: 1%;
+    }
+    .action_bar{
+        text-align: center;
+    }
+
+
+
 /*  CATEGORY*/
 
-.category_container{
+/* .category_container{
     margin: 0 75%;
-}
+} */
 
 .category_box{
     border:1px solid gray;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     width: 300px;
 }
 
-.discussion_container{
-    margin: 0;
-}
+
 .discussion_box{
     border:1px solid gray;
 
@@ -40,4 +100,5 @@ p{  border: 1px solid lightgray;
 .image{
     width: 150px;
     height:200px;
+    padding:10px;
 }
