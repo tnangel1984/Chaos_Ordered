@@ -1,5 +1,5 @@
 class User
-    attr_reader  :id, :username, :password
+    attr_reader  :id, :username, :password, :saved_articles
 
       DB= PG.connect(host:"localhost", port:5432, dbname:'chaos_ordered')
 
@@ -7,6 +7,7 @@ class User
         @id = opts["id"].to_i
         @username = opts["username"]
         @password = opts["password"]
+        @saved_articles = opts["saved_articles"]
         # @articles = opts["article-id"].to_i
         # @custom_categories = opts["custom_categories"]
         # @category_id = opts["category_id"].to_i
@@ -16,11 +17,26 @@ class User
     def self.all
         results= DB.exec(
                   <<-SQL
-                    SELECT *
-                    FROM users;
+                    SELECT users. *,
+                    categories.article_id,
+                    categories.user_id,
+                    categories.categories,
+                    articles.title,
+                    articles.author,
+                    articles.url,
+                    articles.image_url,
+                    articles.source_name,
+                    articles.summary,
+                    articles.date_published
+                    FROM users
+                     JOIN categories
+                        ON users.id=categories.user_id
+                    JOIN articles
+                        ON articles.id=categories.article_id;
                   SQL
         )
-        return results.map { |result| User.new(result)}
+        return results
+        # results.map { |result| User.new(result)}
     end
 
 
