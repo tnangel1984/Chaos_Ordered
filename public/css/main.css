@@ -35,12 +35,13 @@
         border: 1px solid blue;
     }
     .article_container{
-        /* padding:25px 0; */
+        margin: 40px auto; 
         border:1px solid slategray;
     }
 
     .headline_container{
         padding 0 2%;
+
     }
 
     .headline, h2, h3{

@@ -30721,3 +30721,23 @@ Processing by ArticlesController#index as */*
 Completed 200 OK in 3ms (Views: 2.0ms)
 
 
+Started GET "/articles" for 127.0.0.1 at 2018-05-09 19:21:04 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 114ms (Views: 45.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-09 19:22:24 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 34ms (Views: 25.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-09 19:22:43 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 47ms (Views: 42.9ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-05-09 22:07:43 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 89ms (Views: 25.7ms)
+
+
