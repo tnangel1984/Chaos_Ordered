@@ -1,6 +1,7 @@
 class Category extends React.Component {
     render(){
         return <div className="category_container">
+
             <div className="category_box">
                 <h3>Category1: Economics <img src="#"></img></h3>
                 <ul className="previewList">
@@ -40,6 +41,7 @@ class Category extends React.Component {
                     <li>item4</li>
                 </ul>
             </div>
+    
         </div>
     }
 }
