@@ -7,8 +7,9 @@ class User
         @id = opts["id"].to_i
         @username = opts["username"]
         @password = opts["password"]
-        @saved_articles = opts["saved_articles"]
-
+        if opts["saved_articles"]
+            @saved_articles = opts["saved_articles"]
+        end
         # @articles = opts["article-id"].to_i
         # @custom_categories = opts["custom_categories"]
         # @category_id = opts["category_id"].to_i
@@ -82,11 +83,50 @@ class User
     def self.find(id)
         results = DB.exec(
             <<-SQL
-                SELECT * FROM users
-                WHERE id=#{id};
+            SELECT users. *,
+            categories.article_id,
+            categories.user_id,
+            categories.categories,
+            articles.title,
+            articles.author,
+            articles.url,
+            articles.image_url,
+            articles.source_name,
+            articles.summary,
+            articles.date_published
+            FROM users
+            LEFT JOIN categories
+                ON users.id=categories.user_id
+            LEFT JOIN articles
+                ON articles.id=categories.article_id
+            WHERE users.id=#{id};
             SQL
         )
-        return User.new(results.first)
+
+        saved_articles= []
+
+    #In the show case you only loop over the MANY, then push them into and array
+        results.each do |result|
+            if result["article_id"]
+                saved_articles.push Article.new({
+                    "title"=>result["title"],
+                    "author"=>result["author"],
+                    "url"=>result["url"],
+                    "image_url"=>result["image_url"],
+                    "source_name"=>result["source_name"],
+                    "summary"=>result["summary"],
+                    "date_published"=>result["date_published"]
+                })
+            else
+                saved_articles=nil
+            end
+        end
+    #Array of many is appended here
+        return User.new(
+            "username" => results.first["username"],
+            "password"=> results.first["password"],
+            "saved_articles" => saved_articles
+        )
     end
 
     def self.create opts
