@@ -81,14 +81,14 @@ class User
 
                 if result["categories"]
                     puts categories
-                    new_cateogry =Category.new({
+                    new_category =Category.new({
                         "article_id"=> result["article_id"],
                         "user_id" =>result["user_id"],
                         "id"=>result["category_id"],
                         "categories"=>result["categories"]
                     })
 
-                    new_article.categories.push(new_cateogry)
+                    new_article.categories.push(new_category)
                 end
 
                 users.last.saved_articles.push(new_article)
