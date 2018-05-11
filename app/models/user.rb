@@ -21,10 +21,9 @@ class User
         results= DB.exec(
                   <<-SQL
                     SELECT users. *,
-                    categories.id AS category_id,
-                    categories.article_id,
-                    categories.user_id,
-                    categories.categories,
+                    joins.id AS category_id,
+                    joins.article_id,
+                    joins.user_id,
                     articles.title,
                     articles.author,
                     articles.url,
@@ -33,12 +32,13 @@ class User
                     articles.summary,
                     articles.date_published
                     FROM users
-                    LEFT JOIN categories
-                        ON users.id=categories.user_id
+                    LEFT JOIN joins
+                        ON users.id=joins.user_id
                     LEFT JOIN articles
-                        ON articles.id=categories.article_id;
+                        ON articles.id=joins.article_id;
                   SQL
         )
+        # return results
 # ONE USER  MANY ARTICLES,  ONE LOCATION MANY PEOPLE
         # results.map { |result| User.new(result)}
 
@@ -79,17 +79,17 @@ class User
     #PUSHES the new many object onto the last item in the user array
     #REMEMBER still in the each do loop, so the array is changing with every iteration, and the articles always belong to the last item added the the array, because they are take from the same record the user is on, otherwise a userid doesn't exist.
 
-                if result["categories"]
-                    puts categories
-                    new_category =Category.new({
-                        "article_id"=> result["article_id"],
-                        "user_id" =>result["user_id"],
-                        "id"=>result["category_id"],
-                        "categories"=>result["categories"]
-                    })
-
-                    new_article.categories.push(new_category)
-                end
+                # if result["categories"]
+                #     puts categories
+                #     new_category =Category.new({
+                #         "article_id"=> result["article_id"],
+                #         "user_id" =>result["user_id"],
+                #         "id"=>result["category_id"],
+                #         "categories"=>result["categories"]
+                #     })
+                #
+                #     new_article.categories.push(new_category)
+                # end
 
                 users.last.saved_articles.push(new_article)
 
