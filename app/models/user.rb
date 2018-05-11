@@ -51,6 +51,7 @@ class User
         results.each do |result|
             if last_user_id != result["id"]  #comparison to eliminate duplicate users, if its a duplicate it won't be added to the array a second time.
                 users.push User.new(
+                    "id"=>result["id"],
                     "username" => result["username"],
                     "password"=> result["password"],
                     "saved_articles" => []
@@ -61,6 +62,7 @@ class User
     # creates the MANY objects only if their id exists,
             if result["article_id"]
                 new_article =Article.new({
+                    "id"=>result["article_id"],
                     "title"=>result["title"],
                     "author"=>result["author"],
                     "url"=>result["url"],
@@ -109,6 +111,7 @@ class User
         results.each do |result|
             if result["article_id"]
                 saved_articles.push Article.new({
+                    "id"=>result["article_id"],
                     "title"=>result["title"],
                     "author"=>result["author"],
                     "url"=>result["url"],
@@ -122,11 +125,12 @@ class User
             end
         end
     #Array of many is appended here
-        return User.new(
+        return User.new({
+            "id"=>results.first["id"],
             "username" => results.first["username"],
             "password"=> results.first["password"],
             "saved_articles" => saved_articles
-        )
+        })
     end
 
     def self.create opts

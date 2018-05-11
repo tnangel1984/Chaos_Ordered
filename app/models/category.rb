@@ -45,6 +45,7 @@ class Category
             <<-SQL
                 UPDATE categories
                 SET article_id =#{opts["article_id"]}, user_id= #{opts["user_id"]}, categories = '#{opts["categories"]}', category_id=#{opts["category_id"]}
+                WHERE id=#{id}
                 RETURNING id, article_id, user_id, categories, category_id;
             SQL
         )
