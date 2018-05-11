@@ -1,5 +1,5 @@
 class User
-    attr_reader  :id, :username, :password, :saved_articles
+    attr_reader  :id, :username, :password, :saved_articles, :categories
 
       DB= PG.connect(host:"localhost", port:5432, dbname:'chaos_ordered')
 
@@ -10,6 +10,7 @@ class User
         if opts["saved_articles"]
             @saved_articles = opts["saved_articles"]
         end
+        @categories = opts["categories"]
         # @articles = opts["article-id"].to_i
         # @custom_categories = opts["custom_categories"]
         # @category_id = opts["category_id"].to_i
@@ -20,6 +21,7 @@ class User
         results= DB.exec(
                   <<-SQL
                     SELECT users. *,
+                    categories.id AS category_id,
                     categories.article_id,
                     categories.user_id,
                     categories.categories,
@@ -42,7 +44,7 @@ class User
 
 
         saved_articles = []
-
+        categories= []
         users=[]
         last_user_id = nil
 
@@ -59,6 +61,8 @@ class User
                 last_user_id=result["id"]
             end
 
+
+
     # creates the MANY objects only if their id exists,
             if result["article_id"]
                 new_article =Article.new({
@@ -69,12 +73,32 @@ class User
                     "image_url"=>result["image_url"],
                     "source_name"=>result["source_name"],
                     "summary"=>result["summary"],
-                    "date_published"=>result["date_published"]
+                    "date_published"=>result["date_published"],
+                    "categories" => []
                 })
     #PUSHES the new many object onto the last item in the user array
     #REMEMBER still in the each do loop, so the array is changing with every iteration, and the articles always belong to the last item added the the array, because they are take from the same record the user is on, otherwise a userid doesn't exist.
+
+                if result["categories"]
+                    puts categories
+                    new_cateogry =Category.new({
+                        "article_id"=> result["article_id"],
+                        "user_id" =>result["user_id"],
+                        "id"=>result["category_id"],
+                        "categories"=>result["categories"]
+                    })
+
+                    new_article.categories.push(new_cateogry)
+                end
+
                 users.last.saved_articles.push(new_article)
+
             end
+
+
+
+
+
         end
 
         return users
