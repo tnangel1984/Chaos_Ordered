@@ -21,7 +21,7 @@ class User
         results= DB.exec(
                   <<-SQL
                     SELECT users. *,
-                    joins.id AS category_id,
+                    joins.join_id,
                     joins.article_id,
                     joins.user_id,
                     articles.title,
