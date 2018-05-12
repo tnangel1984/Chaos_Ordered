@@ -31365,3 +31365,137 @@ Processing by UsersController#index as */*
 Completed 200 OK in 20ms (Views: 0.9ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:46:28 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 13ms (Views: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:47:52 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:39:42 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 40ms (Views: 13.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:42:15 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 35ms (Views: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:43:09 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 9ms (Views: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:45:51 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 18ms (Views: 1.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:46:24 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 23ms (Views: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:47:18 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 21ms (Views: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:48:57 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 12ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "GROUP"
+LINE 21:                     GROUP BY user.id, articles.id;
+                             ^
+):
+  
+app/models/user.rb:23:in `exec'
+app/models/user.rb:23:in `all'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:51:45 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 4ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "GROUP"
+LINE 21:                     GROUP BY user.id, articles.id;
+                             ^
+):
+  
+app/models/user.rb:23:in `exec'
+app/models/user.rb:23:in `all'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:51:50 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 9ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "GROUP"
+LINE 21:                     GROUP BY  articles.id;
+                             ^
+):
+  
+app/models/user.rb:23:in `exec'
+app/models/user.rb:23:in `all'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:52:07 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 27ms (Views: 2.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:53:49 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 23ms (Views: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:54:32 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 19ms
+
+
+  
+NoMethodError (undefined method `categories' for nil:NilClass):
+  
+app/models/user.rb:101:in `block in all'
+app/models/user.rb:60:in `each'
+app/models/user.rb:60:in `all'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:55:21 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 24ms (Views: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:56:44 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:56:49 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:200: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/user.rb:200: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:57:03 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 20ms (Views: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 10:58:15 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 21ms (Views: 1.1ms)
+
+

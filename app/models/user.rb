@@ -40,10 +40,11 @@ class User
                     LEFT JOIN articles
                         ON articles.id=joins.article_id
                     LEFT JOIN categories
-                        ON categories.join_id=joins.join_id;
+                        ON categories.join_id=joins.join_id
+                    ORDER BY users.id, articles.id;
                   SQL
         )
-        # return results
+        # return resßults
 # ONE USER  MANY ARTICLES,  ONE LOCATION MANY PEOPLE
         # results.map { |result| User.new(result)}
 
@@ -52,6 +53,7 @@ class User
         categories= []
         users=[]
         last_user_id = nil
+        last_article_id=nil
 
     #this first block re-creates an array of user objects, rather than using map.
     #BECAUSE we need to embed a mechanism (IF stmt) to eliminate duplicates
@@ -70,17 +72,20 @@ class User
 
     # creates the MANY objects only if their id exists,
             if result["article_id"]
-                new_article =Article.new({
-                    "id"=>result["article_id"],
-                    "title"=>result["title"],
-                    "author"=>result["author"],
-                    "url"=>result["url"],
-                    "image_url"=>result["image_url"],
-                    "source_name"=>result["source_name"],
-                    "summary"=>result["summary"],
-                    "date_published"=>result["date_published"],
-                    "categories" => []
-                })
+                # if last_article_id != result["article_id"]
+                        new_article =Article.new({
+                            "id"=>result["article_id"],
+                            "title"=>result["title"],
+                            "author"=>result["author"],
+                            "url"=>result["url"],
+                            "image_url"=>result["image_url"],
+                            "source_name"=>result["source_name"],
+                            "summary"=>result["summary"],
+                            "date_published"=>result["date_published"],
+                            "categories" => []
+                        })
+                #     last_article_id=result["article_id"]
+                # end
     #PUSHES the new many object onto the last item in the user array
     #REMEMBER still in the each do loop, so the array is changing with every iteration, and the articles always belong to the last item added the the array, because they are take from the same record the user is on, otherwise a userid doesn't exist.
 
@@ -93,7 +98,7 @@ class User
 
 
                 end
-                new_article.categories.push(new_category)
+                # new_article.categories.push(new_category)
                 users.last.saved_articles.push(new_article)
 
             end
