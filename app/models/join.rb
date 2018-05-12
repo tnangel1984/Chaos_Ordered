@@ -1,21 +1,20 @@
 class Join
-    attr_reader :id, :user_id, :article_id, :category_id
+    attr_reader :join_id, :user_id, :article_id, :category_id
 
-    DB = PG.connect(host:"localhost", port:5432, dbname: "chaos_ordered")
+    DB = PG.connect(host:"localhost", port:5432, dbname: 'chaos_ordered')
 
-    def initialize (opts)
-        @id = opts["id"].to_i
-        @user_id = opts["user_id"]
-        @article_id=opts["article_id"]
-        @category_id=opts["category_list"]
+    def initialize (opts={})
+        @join_id = opts["join_id"].to_i
+        @user_id = opts["user_id"].to_i
+        @article_id=opts["article_id"].to_i
+
 
     end
 
     def self.all
         results= DB.exec(
             <<-SQL
-                SELECT * FROM joins
-                RETURNING id, user_id, article_id, category_id;
+                SELECT * FROM joins;
             SQL
         )
         return results.map {|result| Join.new(result)}
@@ -27,8 +26,7 @@ class Join
              <<-SQL
                 SELECT *
                 FROM joins
-                WHERE id=#{id}
-                RETURNING id, user_id, article_id, category_id;
+                WHERE join_id=#{id};
             SQL
         )
         return Join.new(results.first)
@@ -38,21 +36,21 @@ class Join
     def self.create(opts)
         results = DB.exec(
             <<-SQL
-                INSERT INTO joins (user_id, article_id, category_id)
-                VALUES (#{opts["user_id"]}, #{opts["article_id"]}, #{opts["category_id"]})
-                RETURNING id, user_id, article_id, category_id;
+                INSERT INTO joins (user_id, article_id)
+                VALUES (#{opts["user_id"]}, #{opts["article_id"]})
+                RETURNING join_id, user_id, article_id;
             SQL
         )
         return Join.new(results.first)
     end
 
-    def update(id, opts)
-        results =DB.exec(
+    def self.update(id, opts)
+        results = DB.exec(
             <<-SQL
                 UPDATE joins
-                SET user_id= #{opts["user_id"]}, article_id=#{opts["article_id"]}, category_id= #{opts["category_id"]}
-                WHERE id =#{id}
-                RETURNING id, user_id, article_id, category_id;
+                SET user_id= #{opts["user_id"]}, article_id= #{opts["article_id"]}
+                WHERE join_id=#{id}
+                RETURNING join_id, user_id, article_id;
             SQL
         )
         return Join.new(results.first)
@@ -62,7 +60,7 @@ class Join
         results= DB.exec(
             <<-SQL
                 DELETE FROM joins
-                WHERE id = #{id}
+                WHERE join_id = #{id}
             SQL
         )
         return {deleted:true}
