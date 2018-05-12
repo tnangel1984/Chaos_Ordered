@@ -70,4 +70,24 @@ class Article
         )
         return {deleted: true}
     end
+
+    def self.duplicates(title)
+        results= DB.exec(
+            <<-SQL
+                SELECT *
+                FROM articles
+                WHERE title ='#{title}'
+            SQL
+        )
+        resArray=[]
+        results.map{|result| resArray.push(result)}
+        # return results
+        if resArray.length == 0
+            return "add article"
+
+        else
+            return results.first["id"]
+        end
+        return resArray.length
+    end
 end

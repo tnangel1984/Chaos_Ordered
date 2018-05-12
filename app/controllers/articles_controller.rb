@@ -20,4 +20,8 @@ class ArticlesController < ApplicationController
     def delete
         render json: Article.delete(params["id"])
     end
+
+    def duplicates
+        render json: Article.duplicates(params["title"])
+    end
 end

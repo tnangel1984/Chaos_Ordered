@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     post '/articles', to: 'articles#create'
     put '/articles/:id', to: 'articles#update'
     delete '/articles/:id', to: 'articles#delete'
+    get 'articleduplicates/:title', to: 'articles#duplicates'
 
     get '/users', to: 'users#index'
     get '/users/:id', to: 'users#show'
