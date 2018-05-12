@@ -1,14 +1,13 @@
 class Category
-    attr_reader :id, :article_id, :user_id, :categories, :category_id
+    attr_reader :id, :category_list, :join_id
 
     DB = PG.connect(host:'localhost', port:5432, dbname:'chaos_ordered')
 
     def initialize opts={}
         @id=opts["id"].to_i
-        @article_id = opts["article_id"].to_i
-        @user_id = opts["user_id"].to_i
-        @categories =opts["categories"]
-        @category_id=opts["category_id"].to_i
+        @category_list= opts["category_list"]
+        @join_id = opts["join_id"].to_i
+
     end
 
     def self.all
@@ -33,20 +32,21 @@ class Category
     def self.create (opts)
         results=DB.exec(
             <<-SQL
-                INSERT INTO categories (article_id, user_id, categories, category_id)
-                VALUES (#{opts["article_id"]}, #{opts["user_id"]}, '#{opts["categories"]}',#{opts["category_id"]})
-                RETURNING id, article_id, user_id, categories, category_id;
+                INSERT INTO categories (category_list, join_id )
+                VALUES ('#{opts["category_list"]}', #{opts["join_id"]})
+                RETURNING id, category_list, join_id;
             SQL
         )
+         return Category.new(results.first)
     end
 
     def self.update(id, opts)
         results= DB.exec(
             <<-SQL
                 UPDATE categories
-                SET article_id =#{opts["article_id"]}, user_id= #{opts["user_id"]}, categories = '#{opts["categories"]}', category_id=#{opts["category_id"]}
+                SET category_list ='#{opts["category_list"]}', join_id= #{opts["join_id"]}
                 WHERE id=#{id}
-                RETURNING id, article_id, user_id, categories, category_id;
+                RETURNING id, category_list, join_id;
             SQL
         )
         return Category.new(results.first)
