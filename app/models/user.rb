@@ -1,5 +1,5 @@
 class User
-    attr_reader  :id, :username, :password, :saved_articles, :categories
+    attr_reader  :id, :username, :password, :saved_articles, :category_list, :categories
 
       DB= PG.connect(host:"localhost", port:5432, dbname:'chaos_ordered')
 
@@ -10,7 +10,9 @@ class User
         if opts["saved_articles"]
             @saved_articles = opts["saved_articles"]
         end
-        @categories = opts["categories"]
+        # @category_list = opts["category_list"]
+        # @join_id=opts["join_id"]
+        # @categories=opts["categories"]
         # @articles = opts["article-id"].to_i
         # @custom_categories = opts["custom_categories"]
         # @category_id = opts["category_id"].to_i
@@ -30,12 +32,15 @@ class User
                     articles.image_url,
                     articles.source_name,
                     articles.summary,
-                    articles.date_published
+                    articles.date_published,
+                    categories.category_list
                     FROM users
                     LEFT JOIN joins
                         ON users.id=joins.user_id
                     LEFT JOIN articles
-                        ON articles.id=joins.article_id;
+                        ON articles.id=joins.article_id
+                    LEFT JOIN categories
+                        ON categories.join_id=joins.join_id;
                   SQL
         )
         # return results
@@ -79,18 +84,16 @@ class User
     #PUSHES the new many object onto the last item in the user array
     #REMEMBER still in the each do loop, so the array is changing with every iteration, and the articles always belong to the last item added the the array, because they are take from the same record the user is on, otherwise a userid doesn't exist.
 
-                # if result["categories"]
-                #     puts categories
-                #     new_category =Category.new({
-                #         "article_id"=> result["article_id"],
-                #         "user_id" =>result["user_id"],
-                #         "id"=>result["category_id"],
-                #         "categories"=>result["categories"]
-                #     })
-                #
-                #     new_article.categories.push(new_category)
-                # end
+                if result["category_list"]
+                    new_category =Category.new({
+                        "id"=>result["id"],
+                        "category_list"=>result["category_list"],
+                        "join_id"=>result["join_id"]
+                    })
 
+
+                end
+                new_article.categories.push(new_category)
                 users.last.saved_articles.push(new_article)
 
             end

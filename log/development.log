@@ -31097,3 +31097,271 @@ Processing by JoinsController#create as */*
 Completed 200 OK in 6ms (Views: 0.2ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:25:00 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 18ms (Views: 2.0ms)
+
+
+Started GET "/joins" for 127.0.0.1 at 2018-05-11 21:25:31 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 11ms (Views: 0.4ms)
+
+
+Started DELETE "/joins/8" for 127.0.0.1 at 2018-05-11 21:27:04 -0400
+Processing by JoinsController#delete as */*
+  Parameters: {"id"=>"8"}
+Completed 200 OK in 4ms (Views: 0.2ms)
+
+
+Started GET "/joins" for 127.0.0.1 at 2018-05-11 21:27:23 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:27:45 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 3ms (Views: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:33:40 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 21ms (Views: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:34:59 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 19ms (Views: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:35:24 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 18ms (Views: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:35:55 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 18ms (Views: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:36:36 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 19ms (Views: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:38:35 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 17ms (Views: 0.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:39:22 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:39:24 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:39:28 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 13ms (Views: 0.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:49:35 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 8ms
+
+
+  
+PG::UndefinedTable (ERROR:  missing FROM-clause entry for table "categories"
+LINE 12:                     categories.category_list
+                             ^
+):
+  
+app/models/user.rb:23:in `exec'
+app/models/user.rb:23:in `all'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:50:05 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 21ms (Views: 2.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:51:28 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 5ms (Views: 3.5ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-11 21:52:09 -0400
+Processing by CategoriesController#index as */*
+Completed 200 OK in 12ms (Views: 0.2ms)
+
+
+Started PUT "/categories/2" for 127.0.0.1 at 2018-05-11 21:52:24 -0400
+Processing by CategoriesController#update as */*
+  Parameters: {"id"=>"2", "category_list"=>"Berkshire Hathaway", "join_id"=>1, "category"=>{"id"=>"2", "category_list"=>"Berkshire Hathaway", "join_id"=>1}}
+Completed 200 OK in 4ms (Views: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:52:40 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 3ms (Views: 2.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:53:03 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 12ms (Views: 2.1ms)
+
+
+Started GET "/joins" for 127.0.0.1 at 2018-05-11 21:53:29 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 10ms (Views: 0.6ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2018-05-11 21:53:51 -0400
+Processing by ArticlesController#index as */*
+Completed 200 OK in 10ms (Views: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:54:08 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 5ms (Views: 3.7ms)
+
+
+Started GET "/joins" for 127.0.0.1 at 2018-05-11 21:54:50 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started PUT "/joins/2" for 127.0.0.1 at 2018-05-11 21:55:15 -0400
+Processing by JoinsController#update as */*
+  Parameters: {"user_id"=>3, "article_id"=>4, "id"=>"2", "join"=>{"user_id"=>3, "article_id"=>4}}
+Completed 200 OK in 11ms (Views: 1.1ms)
+
+
+Started GET "/joins" for 127.0.0.1 at 2018-05-11 21:55:17 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:55:49 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-11 21:56:38 -0400
+Processing by CategoriesController#index as */*
+Completed 200 OK in 11ms (Views: 0.3ms)
+
+
+Started PUT "/joins/3" for 127.0.0.1 at 2018-05-11 21:57:04 -0400
+Processing by JoinsController#update as */*
+  Parameters: {"user_id"=>3, "article_id"=>4, "id"=>"3", "join"=>{"user_id"=>3, "article_id"=>4}}
+Completed 200 OK in 7ms (Views: 0.2ms)
+
+
+Started PUT "/joins/3" for 127.0.0.1 at 2018-05-11 21:57:06 -0400
+Processing by JoinsController#update as */*
+  Parameters: {"user_id"=>3, "article_id"=>4, "id"=>"3", "join"=>{"user_id"=>3, "article_id"=>4}}
+Completed 200 OK in 6ms (Views: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-11 21:57:37 -0400
+Processing by CategoriesController#create as */*
+  Parameters: {"category_list"=>"Berkshire", "join_id"=>3, "category"=>{"category_list"=>"Berkshire", "join_id"=>3}}
+Completed 200 OK in 8ms (Views: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-11 21:57:58 -0400
+Processing by CategoriesController#create as */*
+  Parameters: {"category_list"=>"test", "join_id"=>4, "category"=>{"category_list"=>"test", "join_id"=>4}}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-11 21:58:13 -0400
+Processing by CategoriesController#create as */*
+  Parameters: {"category_list"=>"shareholder", "join_id"=>5, "category"=>{"category_list"=>"shareholder", "join_id"=>5}}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-11 21:58:19 -0400
+Processing by CategoriesController#create as */*
+  Parameters: {"category_list"=>"shareholder", "join_id"=>5, "category"=>{"category_list"=>"shareholder", "join_id"=>5}}
+Completed 200 OK in 7ms (Views: 0.9ms)
+
+
+Started GET "/joins" for 127.0.0.1 at 2018-05-11 21:58:22 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:58:46 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-11 21:59:24 -0400
+Processing by CategoriesController#create as */*
+  Parameters: {"category_list"=>"Berkshire", "join_id"=>5, "category"=>{"category_list"=>"Berkshire", "join_id"=>5}}
+Completed 200 OK in 6ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:59:29 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 21:59:57 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 27ms (Views: 2.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:01:04 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 22ms (Views: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:01:06 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 4ms (Views: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:01:32 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 23ms (Views: 1.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:03:18 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 28ms (Views: 1.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:03:45 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 27ms (Views: 1.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:04:09 -0400
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 9ms
+
+
+  
+PG::UndefinedTable (ERROR:  missing FROM-clause entry for table "categories"
+LINE 12:                     categories.category_list
+                             ^
+):
+  
+app/models/user.rb:23:in `exec'
+app/models/user.rb:23:in `all'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:04:17 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 19ms (Views: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-11 22:05:45 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 20ms (Views: 0.9ms)
+
+
