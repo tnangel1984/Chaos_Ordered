@@ -33245,3 +33245,193 @@ Processing by UsersController#show as */*
 Completed 200 OK in 34ms (Views: 0.6ms)
 
 
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 18:46:27 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 24ms (Views: 0.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:46:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:46:34 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 18:47:27 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 18:48:42 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 21ms (Views: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 18:48:55 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:49:04 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:49:16 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NameError (undefined local variable or method `users' for User:Class):
+  
+app/models/user.rb:177:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:50:16 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:217: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/user.rb:217: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:51:15 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 7ms (Views: 0.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:51:23 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 13ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:51:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 18:51:36 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:51:38 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:51:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 23ms (Views: 0.9ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:52:12 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 20ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:53:32 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 17ms (Views: 0.4ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:54:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/Users/angel/Documents/GA_Projects_mvd_frm_desktop/Chaos_Ordered/app/models/user.rb:219: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/user.rb:219: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:54:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 19ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:55:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 21ms (Views: 0.6ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:56:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 24ms
+
+
+  
+NameError (undefined local variable or method `users' for User:Class):
+  
+app/models/user.rb:177:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:57:07 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 23ms (Views: 1.1ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:57:16 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 20ms (Views: 0.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 18:57:32 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 18:57:36 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:57:38 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-05-12 18:57:40 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/models/user.rb:180:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:57:43 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 4ms (Views: 1.4ms)
+
+

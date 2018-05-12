@@ -144,20 +144,20 @@ end
     #In the show case you only loop over the MANY, then push them into and array
         results.each do |result|
             if result["article_id"]
-                if result["article_id"] != last_article_id
-                        saved_articles.push Article.new({
-                            "id"=>result["article_id"],
-                            "title"=>result["title"],
-                            "author"=>result["author"],
-                            "url"=>result["url"],
-                            "image_url"=>result["image_url"],
-                            "source_name"=>result["source_name"],
-                            "summary"=>result["summary"],
-                            "date_published"=>result["date_published"],
-                            "categories" =>[]
-                        })
-                    last_article_id = result["article_id"]
-                end
+                    if result["article_id"] != last_article_id
+                            saved_articles.push Article.new({
+                                "id"=>result["article_id"],
+                                "title"=>result["title"],
+                                "author"=>result["author"],
+                                "url"=>result["url"],
+                                "image_url"=>result["image_url"],
+                                "source_name"=>result["source_name"],
+                                "summary"=>result["summary"],
+                                "date_published"=>result["date_published"],
+                                "categories" =>[]
+                            })
+                        last_article_id = result["article_id"]
+                    end
 
                     if result["category_list"]
                         new_category =Category.new({
@@ -166,7 +166,7 @@ end
                             "join_id"=>result["join_id"]
                         })
 
-                             saved_articles[saved_articles.length-1].categories.push(new_category)
+                        saved_articles[saved_articles.length-1].categories.push(new_category)
                     end
             else
                 saved_articles=nil
@@ -174,7 +174,7 @@ end
         end
 
 
-     return saved_articles
+     # return saved_articles
     #Array of many is appended here
         return User.new({
             "id"=>results.first["id"],
