@@ -32948,3 +32948,300 @@ Processing by UsersController#index as */*
 Completed 200 OK in 25ms (Views: 2.2ms)
 
 
+Started GET "/categories" for 127.0.0.1 at 2018-05-12 17:06:15 -0400
+Processing by CategoriesController#index as */*
+Completed 200 OK in 15ms (Views: 1.1ms)
+
+
+Started DELETE "/categories/8" for 127.0.0.1 at 2018-05-12 17:06:22 -0400
+Processing by CategoriesController#delete as */*
+  Parameters: {"id"=>"8"}
+Completed 200 OK in 15ms (Views: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 17:06:41 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 21ms (Views: 1.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 17:31:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 18ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column categories.user_id does not exist
+LINE 14:                 ON users.id=categories.user_id
+                                     ^
+):
+  
+app/models/user.rb:113:in `exec'
+app/models/user.rb:113:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 17:33:14 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "WHERE"
+LINE 21:             WHERE users.id=1;
+                     ^
+):
+  
+app/models/user.rb:113:in `exec'
+app/models/user.rb:113:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2018-05-12 17:33:39 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 10ms (Views: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 17:33:43 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 17:33:46 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 17:35:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 14ms (Views: 0.6ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 17:37:22 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 24ms
+
+
+  
+NameError (undefined local variable or method `users' for User:Class):
+  
+app/models/user.rb:168:in `block in find'
+app/models/user.rb:144:in `each'
+app/models/user.rb:144:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 17:40:04 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 31ms
+
+
+  
+NameError (undefined local variable or method `categories' for User:Class):
+  
+app/models/user.rb:168:in `block in find'
+app/models/user.rb:144:in `each'
+app/models/user.rb:144:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:01:18 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 29ms (Views: 2.1ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:01:45 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 24ms (Views: 1.1ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:33:42 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 28ms (Views: 3.8ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:35:08 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 18ms (Views: 0.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 18:35:19 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 18:35:56 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 27ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:35:59 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:36:06 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 25ms (Views: 1.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-12 18:36:21 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 6ms (Views: 0.8ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:36:30 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-12 18:36:32 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 4ms (Views: 1.5ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:37:01 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 24ms (Views: 0.6ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:38:38 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 17ms
+
+
+  
+PG::ConnectionBad (FATAL:  sorry, too many clients already
+):
+  
+app/models/article.rb:4:in `<class:Article>'
+app/models/article.rb:1:in `<top (required)>'
+app/models/user.rb:148:in `block in find'
+app/models/user.rb:145:in `each'
+app/models/user.rb:145:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:39:00 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+PG::ConnectionBad (FATAL:  sorry, too many clients already
+):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:41:26 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 313ms (Views: 0.4ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:41:56 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 28ms (Views: 0.6ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:42:11 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:42:16 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 31ms
+
+
+  
+NoMethodError (undefined method `categories' for #<Array:0x007f96a3253aa0>):
+  
+app/models/user.rb:176:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:42:27 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 21ms
+
+
+  
+NoMethodError (undefined method `categories' for #<Array:0x007f96a5e6d690>):
+  
+app/models/user.rb:169:in `block in find'
+app/models/user.rb:145:in `each'
+app/models/user.rb:145:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:42:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `categories' for #<Array:0x007f96a7311da8>):
+  
+app/models/user.rb:169:in `block in find'
+app/models/user.rb:145:in `each'
+app/models/user.rb:145:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:42:44 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 20ms (Views: 0.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:43:13 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 19ms (Views: 0.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:43:24 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 19ms (Views: 0.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:43:43 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 26ms
+
+
+  
+NameError (undefined local variable or method `new_category' for User:Class):
+  
+app/models/user.rb:176:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:43:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 25ms
+
+
+  
+NameError (undefined local variable or method `new_category' for User:Class):
+  
+app/models/user.rb:176:in `find'
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/3" for 127.0.0.1 at 2018-05-12 18:44:17 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 34ms (Views: 0.6ms)
+
+
