@@ -15,8 +15,8 @@ class APImethods extends React.Component{
         this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {articlesDB:[], selectedArticle:{}, headlines:[],
-            homeVisible:true, myArticlesVisible:false, duplicate:"",
+        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:{},
+            homeVisible:true, myArticlesVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
@@ -71,11 +71,17 @@ getHeadLines(){
 
 //1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
 
-    duplicateArticles(title){
+    duplicateArticles(title, article){
         console.log("duplicateArticles executed");
         fetch('/articleduplicates/'+ title)
         .then(response=>response.json())
-        .then(response=>console.log(response))
+        .then(response=>{
+                console.log(this.state.duplicate);
+            this.setState({duplicate:response});
+            console.log(response == "add article");
+            (response == "add article") ? this.createArticle(article) : false;
+            console.log(this.state.duplicate);
+        })
         .catch(error=>console.log(error))
     }
     createArticle(article){
@@ -175,7 +181,7 @@ toggleState(str1, str2, str3){
                 // RENDER
 // ===============================================
     render(){
-        console.log(this.state.articles);
+        // console.log(this.state.articles);
 
         return<div className="master">
             <Nav toggleState={this.toggleState}/>

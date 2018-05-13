@@ -87,9 +87,9 @@ class Article
         response=[]
         resArray=[]
         results.map{|result| resArray.push(result)}
-
+ p resArray.length
         if resArray.length == 0
-        p "add article"
+            p "add article"
             response.push("add article")
             return response
         else

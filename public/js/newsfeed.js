@@ -1,7 +1,7 @@
 
 class Newsfeed extends React.Component{
     render(){
-        console.log(this.props.headlines)
+        // console.log(this.props.headlines)
         return <div className="container-fluid master master_container">
                 <div className="row ">
                     <Discussion className="col-3"/>
@@ -31,7 +31,7 @@ class Newsfeed extends React.Component{
                                        <button>bump</button>
                                        <button>store</button>
                                        <button>comment</button>
-                                       <button onClick={()=>{this.props.duplicateArticles(headline.title)}}>share</button>
+                                       <button onClick={()=>{this.props.duplicateArticles(headline.title, headline)}}>share</button>
                                     </div>
                                 </div>
                             </div>
