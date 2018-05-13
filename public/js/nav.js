@@ -5,6 +5,7 @@ class Nav extends React.Component{
 
             <ul className="nav nav-pills">
             <h1 className="nav nav1">Chaos_Ordered</h1>
+            <h1 className="nav nav1">POWEREDBY</h1>
             <li className="nav nav2">
                 <li className="nav-item">
                         <a className="nav-link active" href="#" onClick={()=>this.props.toggleState('homeVisible','myArticlesVisible','loginVisible')}>Home</a>
