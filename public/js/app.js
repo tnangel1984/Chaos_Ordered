@@ -15,9 +15,12 @@ class APImethods extends React.Component{
         this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
         this.createJoin=this.createJoin.bind(this)
-        this.addJoin=this.addJoin.bind(this)
+        this.addJoinDB=this.addJoinDB.bind(this)
+        this.createCategory = this.createCategory.bind(this)
+        this.addCategoryDB=this.addCategoryDB.bind(this)
+        this.deleteCategory=this.deleteCategory.binad(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:{},
+        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:{}, recordJoinID:0,
             homeVisible:true, myArticlesVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
@@ -33,6 +36,10 @@ class APImethods extends React.Component{
             userArticle:{
                 user_id:2,
                 article_id:0
+            },
+            category:{
+                category:"",
+                join_id:0
             }
         }
     }
@@ -197,7 +204,7 @@ createJoin(articleID){
     this.addJoin(this.state.userArticle)
 }
 
-addJoin(userArticle){
+addJoinDB(userArticle){
     console.log("addJoin executed");
 
     fetch('/joins', {
@@ -209,7 +216,12 @@ addJoin(userArticle){
         }
     })
     .then(response=>response.json())
-    .then(response=>{console.log(response); console.log("new join created")})
+    .then(response=>{
+        console.log(response);
+        this.setState({recordJoinID:response.join_id})
+        console.log("new join created");
+        console.log(this.state.recordJoinID);
+    })
     .catch(error=>console.log(error))
 }
 
@@ -217,11 +229,38 @@ addJoin(userArticle){
 // ===============================================
 //              CATEGORIES
 // ===============================================
+//  adds categories to SPECIFIC articles based on JOIN ID in When joins record is created.
+//
+    // DETERMING FLOW THROUGH OF JOIN ID ... AND HOW/WHERE IT'S SET... try to associate with individual article.
+
+createCategory(category, join_id){
+    this.setState({
+        category:{
+            category:category
+            join_id:this.state.recordJoinID
+        }
+    })
+}
+
+addCategoryDB(category){
+     fetch('/categories', {
+         body: JSON.stringify(category),
+         method: 'POST',
+         headers: {
+             'Accept':'application/json, text/plain,  */*',
+             'Content-Type':'application/json'
+         }
+     })
+     .then(response=>response.json())
+     .then(response=>console.log(response))
+     .catch(error=>console.log(error))
+
+ }
 
 
+deleteCategory(){
 
-
-
+}
 
 
 toggleState(str1, str2, str3){
