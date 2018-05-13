@@ -31,7 +31,7 @@ class Newsfeed extends React.Component{
                                        <button>bump</button>
                                        <button>store</button>
                                        <button>comment</button>
-                                       <button onClick={()=>{this.props.createArticle(headline)}}>share</button>
+                                       <button onClick={()=>{this.props.duplicateArticles(headline.title)}}>share</button>
                                     </div>
                                 </div>
                             </div>
@@ -68,3 +68,5 @@ class Newsfeed extends React.Component{
 //     <button>comment</button>
 //     <button>share</button>
 // </div>
+
+// this.props.createArticle(headline),

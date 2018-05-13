@@ -33435,3 +33435,27 @@ Processing by UsersController#show as */*
 Completed 200 OK in 4ms (Views: 1.4ms)
 
 
+Started GET "/articleduplicates/Paris%20attacker%20who%20stabbed%205%20was%20on%20police%20watch%20list,%20official%20says" for 127.0.0.1 at 2018-05-13 08:53:33 -0400
+Processing by ArticlesController#duplicates as */*
+  Parameters: {"title"=>"Paris attacker who stabbed 5 was on police watch list, official says"}
+Completed 200 OK in 295ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Paris%20attacker%20who%20stabbed%205%20was%20on%20police%20watch%20list,%20official%20says" for 127.0.0.1 at 2018-05-13 08:57:13 -0400
+Processing by ArticlesController#duplicates as */*
+  Parameters: {"title"=>"Paris attacker who stabbed 5 was on police watch list, official says"}
+Completed 200 OK in 11ms (Views: 0.3ms)
+
+
+Started GET "/articleduplicates/Paris%20attacker%20who%20stabbed%205%20was%20on%20police%20watch%20list,%20official%20says" for 127.0.0.1 at 2018-05-13 08:57:59 -0400
+Processing by ArticlesController#duplicates as */*
+  Parameters: {"title"=>"Paris attacker who stabbed 5 was on police watch list, official says"}
+Completed 200 OK in 2ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Paris%20attacker%20who%20stabbed%205%20was%20on%20police%20watch%20list,%20official%20says" for 127.0.0.1 at 2018-05-13 08:58:29 -0400
+Processing by ArticlesController#duplicates as */*
+  Parameters: {"title"=>"Paris attacker who stabbed 5 was on police watch list, official says"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+

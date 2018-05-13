@@ -7,6 +7,7 @@ class APImethods extends React.Component{
         this.getHeadLines=this.getHeadLines.bind(this)
         this.getArticles=this.getArticles.bind(this)
         this.getArticle=this.getArticle.bind(this)
+        this.duplicateArticles=this.duplicateArticles.bind(this)
         this.createArticle=this.createArticle.bind(this)
         this.appendArticle=this.appendArticle.bind(this)
         this.addArticleDB=this.addArticleDB.bind(this)
@@ -15,7 +16,7 @@ class APImethods extends React.Component{
         this.deleteArticle=this.deleteArticle.bind(this)
         this.toggleState =this.toggleState.bind(this)
         this.state = {articlesDB:[], selectedArticle:{}, headlines:[],
-            homeVisible:true, myArticlesVisible:false,
+            homeVisible:true, myArticlesVisible:false, duplicate:"",
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
@@ -31,7 +32,7 @@ class APImethods extends React.Component{
     }
 
     componentDidMount(){
-        this.getArticles()
+        // this.getArticles()
         this.getHeadLines()
     }
 
@@ -70,6 +71,13 @@ getHeadLines(){
 
 //1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
 
+    duplicateArticles(title){
+        console.log("duplicateArticles executed");
+        fetch('/articleduplicates/'+ title)
+        .then(response=>response.json())
+        .then(response=>console.log(response))
+        .catch(error=>console.log(error))
+    }
     createArticle(article){
         console.log("createArticle executed");
         this.setState({
@@ -120,7 +128,7 @@ getHeadLines(){
     }
 
     updateArticleDB(article){
-        fetch('/articles'+id,{
+        fetch('/articles/'+ article.id,{
             body:JSON.stringify(article),
             method:'PUT',
             headers:{
@@ -128,14 +136,14 @@ getHeadLines(){
                 'Content-Type':'application/json'
             }
         })
-        .then(response=>respnse.json())
+        .then(response=>response.json())
         .then(updatedArticle=>{this.getArticles()})
         .catch(error=>console.log(error))
     }
 
 
-    deleteArticle(id, article){
-        fetch('/articles' + id, {method:'DELETE'})
+    deleteArticle(index, article){
+        fetch('/articles/' + article.id, {method:'DELETE'})
         .then(response.json())
         .then(data=>{
             this.setState({
@@ -174,6 +182,7 @@ toggleState(str1, str2, str3){
             <Newsfeed
                 headlines={this.state.headlines}
                 createArticle={this.createArticle}
+                duplicateArticles={this.duplicateArticles}
             />
 
 

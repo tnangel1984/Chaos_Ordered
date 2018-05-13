@@ -79,19 +79,24 @@ class Article
                 WHERE title = '#{title}'
             SQL
         )
+        p title
+
     # return results
     # concat_ws(',', title, author)='#{title}'
     # results[0]["concat_ws"]
-
+        response=[]
         resArray=[]
         results.map{|result| resArray.push(result)}
-    
-        if resArray.length == 0
-            return "add article"
 
+        if resArray.length == 0
+        p "add article"
+            response.push("add article")
+            return response
         else
-            return results.first["id"]
+            p results.first["id"]
+             response.push(results.first["id"])
+             return response
         end
-        return resArray.length
+    return results
     end
 end
