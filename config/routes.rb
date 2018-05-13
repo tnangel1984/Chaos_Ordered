@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     post '/articles', to: 'articles#create'
     put '/articles/:id', to: 'articles#update'
     delete '/articles/:id', to: 'articles#delete'
+    get 'articleduplicates/:title', to: 'articles#duplicates'
 
     get '/users', to: 'users#index'
     get '/users/:id', to: 'users#show'
@@ -20,4 +21,9 @@ Rails.application.routes.draw do
     put '/categories/:id', to: 'categories#update'
     delete '/categories/:id', to: 'categories#delete'
 
+    get '/joins', to: 'joins#index'
+    get '/joins/:id', to: 'joins#show'
+    post '/joins', to: 'joins#create'
+    put '/joins/:id', to: 'joins#update'
+    delete '/joins/:id', to: 'joins#delete'
 end

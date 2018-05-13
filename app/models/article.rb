@@ -1,5 +1,5 @@
 class Article
-    attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary
+    attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary, :categories
 
     DB = PG.connect(host:"localhost", port:5432, dbname: 'chaos_ordered')
 
@@ -12,6 +12,7 @@ class Article
         @source_name=opts["source_name"]
         @date_published=opts["date_published"]
         @summary=opts["summary"]
+        @categories=opts["categories"]
     end
 
 
@@ -68,5 +69,29 @@ class Article
             SQL
         )
         return {deleted: true}
+    end
+
+    def self.duplicates(title)
+        results= DB.exec(
+            <<-SQL
+                SELECT *
+                FROM articles
+                WHERE title = '#{title}'
+            SQL
+        )
+    # return results
+    # concat_ws(',', title, author)='#{title}'
+    # results[0]["concat_ws"]
+
+        resArray=[]
+        results.map{|result| resArray.push(result)}
+    
+        if resArray.length == 0
+            return "add article"
+
+        else
+            return results.first["id"]
+        end
+        return resArray.length
     end
 end
