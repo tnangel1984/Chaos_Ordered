@@ -14,7 +14,7 @@ class APImethods extends React.Component{
         this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {articles:[], selectedArticle:{}, headlines:[],
+        this.state = {articlesDB:[], selectedArticle:{}, headlines:[],
             homeVisible:true, myArticlesVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
@@ -71,7 +71,7 @@ getHeadLines(){
 //1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
 
     createArticle(article){
-
+        console.log("createArticle executed");
         this.setState({
             article:{
                 title:article.title? article.title.replace(/\'/g, ""):"",
@@ -82,31 +82,36 @@ getHeadLines(){
                 summary:article.description? article.description.replace(/\'/g, ""):"",
                 date_published:article.publishedAt? article.publishedAt.replace(/\'/g, ""):"",
             }
-        }, ()=>{console.log(this.state.article);}
-    )
-
+        }, ()=>{
+                console.log(this.state.article);
+                this.addArticleDB(this.state.article);
+            }
+        )
     }
 
-    appendArticle(){
-
+    appendArticle(article){
+        console.log("appendArticle executed");
+        const appendedArticles = this.state.articlesDB
+        appendedArticles.unshift(article)
+        this.setState({articlesDB: appendedArticles})
     }
 
-    addArticleDB(content){
+    addArticleDB(article){
+        console.log("addArticleDB executed");
         fetch('/articles',{
-            body: JSON.stringify(content),
+            body: JSON.stringify(article),
             method:'POST',
             headers:{
                  'Accept': 'application/json, text/plain. */*',
                  'Content-Type': 'application/json'
              }
         })
-        .then(response=>respons.json())
-        .then(newArticle=>{
-                        newArticles=this.state.articles
-                        newArticles.push(newArticle)
-                        this.setState({articles:newArticles})
-        })
+        .then(response=>response.json())
+        .then(newArticle=>{this.appendArticle(newArticle)})
         .catch(error=>{console.log(error)})
+        // newArticles=this.state.articles
+        // newArticles.push(newArticle)
+        // this.setState({articles:newArticles})
     }
 
     updateFormSubmit(event){
