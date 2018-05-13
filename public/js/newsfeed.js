@@ -10,13 +10,15 @@ class Newsfeed extends React.Component{
                         {this.props.headlines.map((headline, index)=>{
                             return <div className = "article_container ">
                                 <div className="headline_container">
+                                <a href={headline.url}>
                                     <h3 className="headline">{headline.title}</h3>
-
+                              </a>
                                     <div className ="img_container">
                                        <img className="img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
                                     </div>
 
                                     <div className="summary">{headline.description}
+
                                     <div className ="category_bar">
                                        <p>Economics</p>
                                        <p>Poverty</p>
@@ -29,7 +31,7 @@ class Newsfeed extends React.Component{
                                        <button>bump</button>
                                        <button>store</button>
                                        <button>comment</button>
-                                       <button>share</button>
+                                       <button onClick={()=>{this.props.createArticle(headline)}}>share</button>
                                     </div>
                                 </div>
                             </div>

@@ -7,15 +7,26 @@ class APImethods extends React.Component{
         this.getHeadLines=this.getHeadLines.bind(this)
         this.getArticles=this.getArticles.bind(this)
         this.getArticle=this.getArticle.bind(this)
+        this.createArticle=this.createArticle.bind(this)
+        this.appendArticle=this.appendArticle.bind(this)
         this.addArticleDB=this.addArticleDB.bind(this)
         this.updateFormSubmit=this.updateFormSubmit.bind(this)
         this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {articles:[], article:{}, headlines:[],
+        this.state = {articles:[], selectedArticle:{}, headlines:[],
             homeVisible:true, myArticlesVisible:false,
             oneArticleVisible:false,
-            userRegVisible:false, loginVisible:false, userRegVisible:false
+            userRegVisible:false, loginVisible:false, userRegVisible:false,
+            article:{
+                title:"",
+                author:"",
+                url:"",
+                image_url:"",
+                source_name:"",
+                summary:"",
+                date_published:""
+            }
         }
     }
 
@@ -58,6 +69,28 @@ getHeadLines(){
 //CREATE METHOD
 
 //1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
+
+    createArticle(article){
+
+        this.setState({
+            article:{
+                title:article.title? article.title.replace(/\'/g, ""):"",
+                author:article.author? article.author.replace(/\'/g, ""):"",
+                url:article.url? article.url.replace(/\'/g, ""):"",
+                image_url:article.urlToImage? article.urlToImage.replace(/\'/g, ""):"",
+                source_name:article.source.name? article.source.name.replace(/\'/g, ""):"",
+                summary:article.description? article.description.replace(/\'/g, ""):"",
+                date_published:article.publishedAt? article.publishedAt.replace(/\'/g, ""):"",
+            }
+        }, ()=>{console.log(this.state.article);}
+    )
+
+    }
+
+    appendArticle(){
+
+    }
+
     addArticleDB(content){
         fetch('/articles',{
             body: JSON.stringify(content),
@@ -133,7 +166,10 @@ toggleState(str1, str2, str3){
 
         return<div className="master">
             <Nav toggleState={this.toggleState}/>
-            <Newsfeed headlines={this.state.headlines}/>
+            <Newsfeed
+                headlines={this.state.headlines}
+                createArticle={this.createArticle}
+            />
 
 
             {this.state.myArticlesVisible ?
