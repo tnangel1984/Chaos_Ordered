@@ -31,4 +31,5 @@ Rails.application.routes.draw do
     post '/joins', to: 'joins#create'
     put '/joins/:id', to: 'joins#update'
     delete '/joins/:id', to: 'joins#delete'
+    # get 'joinduplicates/:id1/:id2', to: 'join#duplicates'
 end

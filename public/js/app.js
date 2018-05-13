@@ -18,10 +18,11 @@ class APImethods extends React.Component{
         this.addJoinDB=this.addJoinDB.bind(this)
         this.createCategory = this.createCategory.bind(this)
         this.addCategoryDB=this.addCategoryDB.bind(this)
-        this.deleteCategory=this.deleteCategory.binad(this)
+        this.deleteCategory=this.deleteCategory.bind(this)
+        this.getUser=this.getUser.bind(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:{}, recordJoinID:0,
-            homeVisible:true, myArticlesVisible:false,
+        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0,
+            homeVisible:false, myArticlesVisible:true,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
@@ -233,10 +234,10 @@ addJoinDB(userArticle){
 //
     // DETERMING FLOW THROUGH OF JOIN ID ... AND HOW/WHERE IT'S SET... try to associate with individual article.
 
-createCategory(category, join_id){
+createCategory(category){
     this.setState({
         category:{
-            category:category
+            category:category,
             join_id:this.state.recordJoinID
         }
     })
@@ -254,12 +255,23 @@ addCategoryDB(category){
      .then(response=>response.json())
      .then(response=>console.log(response))
      .catch(error=>console.log(error))
-
  }
 
 
 deleteCategory(){
+console.log("delete");
+}
 
+// ===============================================
+//              USERS
+// ===============================================
+
+
+getUser(id){
+  fetch('/users/'+id)
+  .then(response=>response.json())
+  .then(response=> console.log(response))
+  .catch(error=>console.log(error))
 }
 
 
@@ -287,7 +299,7 @@ toggleState(str1, str2, str3){
             {this.state.myArticlesVisible ?
                  <MyArticles
                  articles={this.state.articles}
-                 getArticle={this.getArticle}
+                 getUser={this.getUser}
                  />
              : ""}
          </div>

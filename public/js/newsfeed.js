@@ -9,22 +9,33 @@ class Newsfeed extends React.Component{
                     <div className="col-6 headline_containter">
                         {this.props.headlines.map((headline, index)=>{
                             return <div className = "article_container ">
+
                                 <div className="headline_container">
+
                                 <a href={headline.url}>
                                     <h3 className="headline">{headline.title}</h3>
-                              </a>
-                                    <div className ="img_container">
-                                       <img className="img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
-                                    </div>
+                                </a>
 
-                                    <div className="summary">{headline.description}
+                                <div className ="img_container">
+                                   <img className="img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
+                                </div>
 
-                                    <div className ="category_bar">
-                                       <p>Economics</p>
+                                <div className="summary">{headline.description}
+                                </div>
+
+                                <div className ="category_bar">
+                                    <form>
+                                        <input type="text" placeholder="Category 1" value={this.props.category1}/>
+                                        <input type="text" placeholder="Category 2" value={this.props.category2}/>
+                                        <input type="text" placeholder="Category 3" value={this.props.category3}/>
+                                        <button type="submit"> Categorize</button>
+                                    </form>
+                                    <p>Economics</p>
                                        <p>Poverty</p>
                                        <p>Custom</p>
-                                    </div>
-                                    </div>
+
+                                </div>
+
 
 
                                     <div className ="action_bar">

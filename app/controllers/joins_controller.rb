@@ -20,4 +20,8 @@ class JoinsController < ApplicationController
     def delete
         render json: Join.delete(params["id"])
     end
+
+    # def duplicates
+    #     render json: Join.duplicates(params[":id1", ":id2"])
+    # end
 end
