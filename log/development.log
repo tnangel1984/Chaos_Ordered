@@ -33933,3 +33933,84 @@ Processing by ArticlesController#create as JSON
 Completed 200 OK in 4ms (Views: 1.1ms)
 
 
+Started GET "/articleduplicates/Family,%20With%20Children%20in%20Tow,%20Carry%20Out%20Suicide%20Bombings%20at%203%20Churches%20in%20Indonesia" for 127.0.0.1 at 2018-05-13 13:20:31 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Family, With Children in Tow, Carry Out Suicide Bombings at 3 Churches in Indonesia"}
+Completed 200 OK in 6ms (Views: 1.6ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-13 13:20:31 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Family, With Children in Tow, Carry Out Suicide Bombings at 3 Churches in Indonesia", "author"=>"http://www.nytimes.com/by/rukmini-callimachi", "url"=>"https://www.nytimes.com/2018/05/13/world/asia/indonesia-church-suicide-bomber.html", "image_url"=>"https://static01.nyt.com/images/2018/05/14/world/14Indonesia1-sub/14Indonesia1-sub-facebookJumbo.jpg", "source_name"=>"The New York Times", "summary"=>"The Islamic State claimed responsibility after a couple led four children, ages 18 to 9, in setting off explosions that killed at least seven people, the police said.", "date_published"=>"2018-05-13T16:18:13Z", "article"=>{"title"=>"Family, With Children in Tow, Carry Out Suicide Bombings at 3 Churches in Indonesia", "author"=>"http://www.nytimes.com/by/rukmini-callimachi", "url"=>"https://www.nytimes.com/2018/05/13/world/asia/indonesia-church-suicide-bomber.html", "image_url"=>"https://static01.nyt.com/images/2018/05/14/world/14Indonesia1-sub/14Indonesia1-sub-facebookJumbo.jpg", "source_name"=>"The New York Times", "summary"=>"The Islamic State claimed responsibility after a couple led four children, ages 18 to 9, in setting off explosions that killed at least seven people, the police said.", "date_published"=>"2018-05-13T16:18:13Z"}}
+Completed 200 OK in 4ms (Views: 1.1ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-13 13:20:31 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"userID"=>{}, "articleID"=>16, "join"=>{"userID"=>{}, "articleID"=>16}}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ","
+LINE 2:                 VALUES (, )
+                                ^
+):
+  
+app/models/join.rb:37:in `exec'
+app/models/join.rb:37:in `create'
+app/controllers/joins_controller.rb:13:in `create'
+Started GET "/articleduplicates/Family,%20With%20Children%20in%20Tow,%20Carry%20Out%20Suicide%20Bombings%20at%203%20Churches%20in%20Indonesia" for 127.0.0.1 at 2018-05-13 13:22:20 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Family, With Children in Tow, Carry Out Suicide Bombings at 3 Churches in Indonesia"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-13 13:22:20 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>{}, "article_id"=>["16"], "join"=>{"user_id"=>{}, "article_id"=>["16"]}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "{"
+LINE 2:                 VALUES ({}, ["16"])
+                                ^
+):
+  
+app/models/join.rb:37:in `exec'
+app/models/join.rb:37:in `create'
+app/controllers/joins_controller.rb:13:in `create'
+Started GET "/articleduplicates/Family,%20With%20Children%20in%20Tow,%20Carry%20Out%20Suicide%20Bombings%20at%203%20Churches%20in%20Indonesia" for 127.0.0.1 at 2018-05-13 13:26:23 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Family, With Children in Tow, Carry Out Suicide Bombings at 3 Churches in Indonesia"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-13 13:26:23 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>["16"], "join"=>{"user_id"=>2, "article_id"=>["16"]}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "["
+LINE 2:                 VALUES (2, ["16"])
+                                   ^
+):
+  
+app/models/join.rb:37:in `exec'
+app/models/join.rb:37:in `create'
+app/controllers/joins_controller.rb:13:in `create'
+Started GET "/articleduplicates/Family,%20With%20Children%20in%20Tow,%20Carry%20Out%20Suicide%20Bombings%20at%203%20Churches%20in%20Indonesia" for 127.0.0.1 at 2018-05-13 13:28:27 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Family, With Children in Tow, Carry Out Suicide Bombings at 3 Churches in Indonesia"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-13 13:28:27 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>"16", "join"=>{"user_id"=>2, "article_id"=>"16"}}
+Completed 200 OK in 5ms (Views: 0.4ms)
+
+

@@ -14,13 +14,14 @@ class APImethods extends React.Component{
         this.updateFormSubmit=this.updateFormSubmit.bind(this)
         this.updateArticleDB=this.updateArticleDB.bind(this)
         this.deleteArticle=this.deleteArticle.bind(this)
+        this.createJoin=this.createJoin.bind(this)
+        this.addJoin=this.addJoin.bind(this)
         this.toggleState =this.toggleState.bind(this)
         this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:{},
             homeVisible:true, myArticlesVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
-
                 title:"",
                 author:"",
                 url:"",
@@ -28,6 +29,10 @@ class APImethods extends React.Component{
                 source_name:"",
                 summary:"",
                 date_published:""
+            },
+            userArticle:{
+                user_id:2,
+                article_id:0
             }
         }
     }
@@ -68,10 +73,11 @@ getHeadLines(){
         this.setState({article:article})
 
     }
-//CREATE METHOD
-
-//1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
-
+//==========================================================================
+//          CREATE  ARTICLES FOR CUSTOM API
+//==========================================================================
+//0.Check if duplicate article 1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
+            // checks first whether article title already exists in database. True: returns article ID, False: creates new article and returns article ID
     duplicateArticles(title, article){
         console.log("duplicateArticles executed");
         fetch('/articleduplicates/'+ title)
@@ -82,7 +88,7 @@ getHeadLines(){
             if(response == "add article"){
                 this.createArticle(article)
             }else{
-                console.log("call join function");
+                this.createJoin(this.state.duplicate[0]);
             }
                 // console.log(this.state.duplicate);
         })
@@ -134,6 +140,7 @@ getHeadLines(){
             this.setState({duplicate:newArticle.id})
             console.log(this.state.duplicate);
             this.appendArticle(newArticle)
+            this.createJoin(newArticle.id)
 
         })
         .catch(error=>{console.log(error)})
@@ -142,6 +149,7 @@ getHeadLines(){
         // this.setState({articles:newArticles})
     }
 
+// -----------------------------------------------------------------
     updateFormSubmit(event){
         event.preventDefault();
         this.updateArticleDB(this.state.article)
@@ -161,7 +169,7 @@ getHeadLines(){
         .catch(error=>console.log(error))
     }
 
-
+// -----------------------------------------------------------------
     deleteArticle(index, article){
         fetch('/articles/' + article.id, {method:'DELETE'})
         .then(response.json())
@@ -173,6 +181,37 @@ getHeadLines(){
             })
         })
     }
+
+// ================================================================
+//                       JOINS (USER_ARTICLES)
+// ================================================================
+//  Create records in Join table and Delete records from join table (no update no show)
+
+createJoin(articleID){
+    console.log("createJoin executed");
+
+    this.setState({userArticle:{
+        user_id: this.state.userArticle.user_id,
+        article_id: articleID
+    }})
+    this.addJoin(this.state.userArticle)
+}
+
+addJoin(userArticle){
+    console.log("addJoin executed");
+
+    fetch('/joins', {
+        body: JSON.stringify(userArticle),
+        method:'POST',
+        headers:{
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response=>response.json())
+    .then(response=>{console.log(response); console.log("new join created")})
+    .catch(error=>console.log(error))
+}
 
 
 // ===============================================
