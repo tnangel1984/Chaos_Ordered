@@ -70,4 +70,28 @@ class Article
         )
         return {deleted: true}
     end
+
+    def self.duplicates(title)
+        results= DB.exec(
+            <<-SQL
+                SELECT *
+                FROM articles
+                WHERE title = '#{title}'
+            SQL
+        )
+    # return results
+    # concat_ws(',', title, author)='#{title}'
+    # results[0]["concat_ws"]
+
+        resArray=[]
+        results.map{|result| resArray.push(result)}
+    
+        if resArray.length == 0
+            return "add article"
+
+        else
+            return results.first["id"]
+        end
+        return resArray.length
+    end
 end
