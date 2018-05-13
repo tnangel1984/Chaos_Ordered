@@ -19,10 +19,10 @@ class APImethods extends React.Component{
         this.createCategory = this.createCategory.bind(this)
         this.addCategoryDB=this.addCategoryDB.bind(this)
         this.deleteCategory=this.deleteCategory.bind(this)
-        this.getUser=this.getUser.bind(this)
+        this.getMyArticles=this.getMyArticles.bind(this)
         this.toggleState =this.toggleState.bind(this)
-        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0,
-            homeVisible:false, myArticlesVisible:true,
+        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0, myArticles:{},
+            homeVisible:true, myArticlesVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
@@ -267,18 +267,25 @@ console.log("delete");
 // ===============================================
 
 
-getUser(id){
-  fetch('/users/'+id)
+getMyArticles(){
+    console.log("getMyArticles executed");
+  fetch('/users/'+this.state.userID)
   .then(response=>response.json())
-  .then(response=> console.log(response))
+  .then(foundArticles=>{
+      this.setState({myArticles:foundArticles})
+      console.log(this.state.myArticles);
+  })
   .catch(error=>console.log(error))
 }
 
 
 toggleState(str1, str2, str3){
-    str1 = true
-    str2 = false
-    str3 = false
+    console.log("toggleState executed");
+    this.setState({
+    [str1]: true,
+    [str2]: false,
+    [str3]: false
+    })
 }
 
 // ===============================================
@@ -288,17 +295,24 @@ toggleState(str1, str2, str3){
         // console.log(this.state.articles);
 
         return<div className="master">
-            <Nav toggleState={this.toggleState}/>
-            <Newsfeed
-                headlines={this.state.headlines}
-                createArticle={this.createArticle}
-                duplicateArticles={this.duplicateArticles}
+            <Nav
+            getMyArticles={this.getMyArticles}
+            toggleState={this.toggleState}
+
             />
+            {this.state.homeVisible ?
+                <Newsfeed
+                    headlines={this.state.headlines}
+                    createArticle={this.createArticle}
+                    duplicateArticles={this.duplicateArticles}
+                />
+            : ""
+            }
 
 
             {this.state.myArticlesVisible ?
                  <MyArticles
-                 articles={this.state.articles}
+                 myArticles={this.state.myArticles}
                  getUser={this.getUser}
                  />
              : ""}

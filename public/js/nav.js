@@ -8,10 +8,14 @@ class Nav extends React.Component{
             <h1 className="nav nav1">POWEREDBY</h1>
             <li className="nav nav2">
                 <li className="nav-item">
-                        <a className="nav-link active" href="#" onClick={()=>this.props.toggleState('homeVisible','myArticlesVisible','loginVisible')}>Home</a>
+                        <a
+                        className="nav-link active"
+                        href="#" onClick={()=>this.props.toggleState('homeVisible','myArticlesVisible','loginVisible')}>Home</a>
                 </li>
                 <li className="nav-item">
-                        <a className="nav-link active" href="#" onClick={()=>this.props.toggleState('myArticlesVisible','homeVisible','loginVisible')}>MyArticles</a>
+                        <a className="nav-link active" href="#"
+
+                         onClick={()=>{this.props.getMyArticles();this.props.toggleState('myArticlesVisible','homeVisible','loginVisible')}}>MyArticles</a>
                 </li>
                 <li className="nav-item">
                         <a className="nav-link active" href="#" onClick={()=>this.props.toggleState('loginVisible','homeVisible','myArticlesVisible')}>Login</a>
