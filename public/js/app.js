@@ -20,6 +20,7 @@ class APImethods extends React.Component{
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
+
                 title:"",
                 author:"",
                 url:"",
@@ -76,14 +77,18 @@ getHeadLines(){
         fetch('/articleduplicates/'+ title)
         .then(response=>response.json())
         .then(response=>{
-                console.log(this.state.duplicate);
             this.setState({duplicate:response});
-            console.log(response == "add article");
-            (response == "add article") ? this.createArticle(article) : false;
-            console.log(this.state.duplicate);
+
+            if(response == "add article"){
+                this.createArticle(article)
+            }else{
+                console.log("call join function");
+            }
+                // console.log(this.state.duplicate);
         })
         .catch(error=>console.log(error))
     }
+
     createArticle(article){
         console.log("createArticle executed");
         this.setState({
@@ -99,6 +104,9 @@ getHeadLines(){
         }, ()=>{
                 console.log(this.state.article);
                 this.addArticleDB(this.state.article);
+                // this.setState({duplicate:this.state.article.id});
+                // console.log(this.state.duplicate);
+
             }
         )
     }
@@ -121,7 +129,13 @@ getHeadLines(){
              }
         })
         .then(response=>response.json())
-        .then(newArticle=>{this.appendArticle(newArticle)})
+        .then(newArticle=>{
+            console.log(newArticle.id);
+            this.setState({duplicate:newArticle.id})
+            console.log(this.state.duplicate);
+            this.appendArticle(newArticle)
+
+        })
         .catch(error=>{console.log(error)})
         // newArticles=this.state.articles
         // newArticles.push(newArticle)

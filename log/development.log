@@ -33813,3 +33813,123 @@ Processing by ArticlesController#duplicates as HTML
 Completed 200 OK in 1ms (Views: 0.2ms)
 
 
+Started GET "/articleduplicates/Waffle%20House%20hero%20James%20Shaw%20Jr.%20meets%20with%20Parkland%20shooting%20survivors" for 127.0.0.1 at 2018-05-13 12:04:37 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Waffle House hero James Shaw Jr. meets with Parkland shooting survivors"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/articleduplicates/Waffle%20House%20hero%20James%20Shaw%20Jr.%20meets%20with%20Parkland%20shooting%20survivors" for 127.0.0.1 at 2018-05-13 12:04:42 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Waffle House hero James Shaw Jr. meets with Parkland shooting survivors"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:05:46 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:05:51 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:06:15 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:08:25 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 2ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:10:12 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 11ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:10:14 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:10:23 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:15:20 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/The%20Latest:%20Friend%20of%20Paris%20suspect%20detained%20for%20questioning" for 127.0.0.1 at 2018-05-13 12:15:55 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"The Latest: Friend of Paris suspect detained for questioning"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Surabaya%20attacks:%20Indonesia%20and%20militancy%20explained" for 127.0.0.1 at 2018-05-13 12:17:09 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Surabaya attacks: Indonesia and militancy explained"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Jerusalem%20embassy:%20Ivanka%20Trump%20and%20Jared%20Kushner%20arrive%20for%20Monday%20opening" for 127.0.0.1 at 2018-05-13 12:18:37 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Jerusalem embassy: Ivanka Trump and Jared Kushner arrive for Monday opening"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Concerns%20about%20violent%20Hawaii%20volcano%20explosions%20grow%20as%20new%20fissures%20form" for 127.0.0.1 at 2018-05-13 12:19:15 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Concerns about violent Hawaii volcano explosions grow as new fissures form"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Concerns%20about%20violent%20Hawaii%20volcano%20explosions%20grow%20as%20new%20fissures%20form" for 127.0.0.1 at 2018-05-13 12:25:31 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Concerns about violent Hawaii volcano explosions grow as new fissures form"}
+Completed 200 OK in 3ms (Views: 0.8ms)
+
+
+Started GET "/articleduplicates/Concerns%20about%20violent%20Hawaii%20volcano%20explosions%20grow%20as%20new%20fissures%20form" for 127.0.0.1 at 2018-05-13 12:25:44 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Concerns about violent Hawaii volcano explosions grow as new fissures form"}
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started GET "/articleduplicates/Concerns%20about%20violent%20Hawaii%20volcano%20explosions%20grow%20as%20new%20fissures%20form" for 127.0.0.1 at 2018-05-13 12:28:33 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Concerns about violent Hawaii volcano explosions grow as new fissures form"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Surabaya%20attacks:%20Indonesia%20and%20militancy%20explained" for 127.0.0.1 at 2018-05-13 12:28:55 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Surabaya attacks: Indonesia and militancy explained"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/articleduplicates/Surabaya%20attacks:%20Indonesia%20and%20militancy%20explained" for 127.0.0.1 at 2018-05-13 12:29:39 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Surabaya attacks: Indonesia and militancy explained"}
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-13 12:29:39 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Surabaya attacks: Indonesia and militancy explained", "author"=>"https://www.facebook.com/bbcnews", "url"=>"http://www.bbc.com/news/world-asia-44100393", "image_url"=>"https://ichef.bbci.co.uk/news/1024/branded_news/404E/production/_101526461_hi046762405.jpg", "source_name"=>"Bbc.com", "summary"=>"The Muslim-majority country continues to be targeted by groups despite efforts to crack down on terrorism.", "date_published"=>"2018-05-13T14:05:52Z", "article"=>{"title"=>"Surabaya attacks: Indonesia and militancy explained", "author"=>"https://www.facebook.com/bbcnews", "url"=>"http://www.bbc.com/news/world-asia-44100393", "image_url"=>"https://ichef.bbci.co.uk/news/1024/branded_news/404E/production/_101526461_hi046762405.jpg", "source_name"=>"Bbc.com", "summary"=>"The Muslim-majority country continues to be targeted by groups despite efforts to crack down on terrorism.", "date_published"=>"2018-05-13T14:05:52Z"}}
+Completed 200 OK in 4ms (Views: 1.1ms)
+
+
