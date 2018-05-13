@@ -76,12 +76,16 @@ class Article
             <<-SQL
                 SELECT *
                 FROM articles
-                WHERE title ='#{title}'
+                WHERE title = '#{title}'
             SQL
         )
+    # return results
+    # concat_ws(',', title, author)='#{title}'
+    # results[0]["concat_ws"]
+
         resArray=[]
         results.map{|result| resArray.push(result)}
-        # return results
+    
         if resArray.length == 0
             return "add article"
 
