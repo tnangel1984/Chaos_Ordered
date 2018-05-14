@@ -37586,3 +37586,373 @@ Processing by UsersController#show as */*
 Completed 200 OK in 2ms (Views: 1.1ms)
 
 
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:20:00 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 13ms (Views: 3.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:22:10 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:22:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 8ms (Views: 6.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:23:37 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:25:12 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:27:15 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:28:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:29:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 2.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:32:26 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.0ms)
+
+
+Started GET "/joins/" for 127.0.0.1 at 2018-05-14 10:39:34 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 5ms (Views: 0.9ms)
+
+
+Started GET "/articleduplicates/Tesla%20Considered%20Adding%20Eye%20Tracking%20and%20Steering-Wheel%20Sensors%20to%20Autopilot%20System" for 127.0.0.1 at 2018-05-14 10:43:27 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Tesla Considered Adding Eye Tracking and Steering-Wheel Sensors to Autopilot System"}
+Completed 200 OK in 3ms (Views: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-14 10:43:27 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Tesla Considered Adding Eye Tracking and Steering-Wheel Sensors to Autopilot System", "author"=>"Tim Higgins", "url"=>"https://www.wsj.com/articles/tesla-considered-adding-eye-tracking-and-steering-wheel-sensors-to-autopilot-system-1526302921", "image_url"=>"https://images.wsj.net/im-10206/social", "source_name"=>"The Wall Street Journal", "summary"=>"Long before the fatal March 23 crash of a Tesla with its Autopilot system engaged, some company engineers expressed concern that more warnings were needed to keep drivers’ eyes on the road or hands on the wheel.", "date_published"=>"2018-05-14T13:02:00Z", "article"=>{"title"=>"Tesla Considered Adding Eye Tracking and Steering-Wheel Sensors to Autopilot System", "author"=>"Tim Higgins", "url"=>"https://www.wsj.com/articles/tesla-considered-adding-eye-tracking-and-steering-wheel-sensors-to-autopilot-system-1526302921", "image_url"=>"https://images.wsj.net/im-10206/social", "source_name"=>"The Wall Street Journal", "summary"=>"Long before the fatal March 23 crash of a Tesla with its Autopilot system engaged, some company engineers expressed concern that more warnings were needed to keep drivers’ eyes on the road or hands on the wheel.", "date_published"=>"2018-05-14T13:02:00Z"}}
+Completed 200 OK in 3ms (Views: 0.8ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-14 10:43:27 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>21, "join"=>{"user_id"=>2, "article_id"=>21}}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:43:36 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 6ms (Views: 2.5ms)
+
+
+Started GET "/joins/" for 127.0.0.1 at 2018-05-14 10:43:44 -0400
+Processing by JoinsController#index as */*
+Completed 200 OK in 2ms (Views: 1.4ms)
+
+
+Started DELETE "/joins/12" for 127.0.0.1 at 2018-05-14 10:43:57 -0400
+Processing by JoinsController#delete as */*
+  Parameters: {"id"=>"12"}
+Completed 200 OK in 18ms (Views: 0.4ms)
+
+
+Started DELETE "/joins/13" for 127.0.0.1 at 2018-05-14 10:44:01 -0400
+Processing by JoinsController#delete as */*
+  Parameters: {"id"=>"13"}
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:44:07 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.0ms)
+
+
+Started GET "/articleduplicates/Tesla%20Considered%20Adding%20Eye%20Tracking%20and%20Steering-Wheel%20Sensors%20to%20Autopilot%20System" for 127.0.0.1 at 2018-05-14 10:44:23 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Tesla Considered Adding Eye Tracking and Steering-Wheel Sensors to Autopilot System"}
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-14 10:44:23 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>"21", "join"=>{"user_id"=>2, "article_id"=>"21"}}
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:44:26 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.4ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-14 10:44:37 -0400
+Processing by CategoriesController#index as */*
+Completed 200 OK in 3ms (Views: 1.0ms)
+
+
+Started DELETE "/joins/14" for 127.0.0.1 at 2018-05-14 10:44:45 -0400
+Processing by JoinsController#delete as */*
+  Parameters: {"id"=>"14"}
+Completed 200 OK in 3ms (Views: 0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:54:35 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:54:48 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 10:55:03 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:03:04 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:03:13 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/test" for 127.0.0.1 at 2018-05-14 11:03:13 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"test"}
+Completed 200 OK in 5ms (Views: 0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:05:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 39ms (Views: 13.3ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:05:55 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:07:41 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 30ms (Views: 1.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:08:38 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:08:42 -0400
+Processing by CategoriesController#finduser as */*
+Started GET "/categoriesquery/undefined" for 127.0.0.1 at 2018-05-14 11:08:42 -0400
+  Parameters: {"userid"=>"2"}
+Processing by CategoriesController#catquery as */*
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+  Parameters: {"query"=>"undefined"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "FROM"
+LINE 8:                     FROM categories
+                            ^
+):
+  
+app/models/category.rb:87:in `exec'
+app/models/category.rb:87:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:09:20 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 27ms (Views: 0.7ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:09:24 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/undefined" for 127.0.0.1 at 2018-05-14 11:09:24 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"undefined"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::DuplicateAlias (ERROR:  table name "joins" specified more than once
+):
+  
+app/models/category.rb:87:in `exec'
+app/models/category.rb:87:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:11:31 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:11:36 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 0ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/test" for 127.0.0.1 at 2018-05-14 11:11:36 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"test"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::DuplicateAlias (ERROR:  table name "joins" specified more than once
+):
+  
+app/models/category.rb:87:in `exec'
+app/models/category.rb:87:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:13:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:13:59 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/test" for 127.0.0.1 at 2018-05-14 11:13:59 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"test"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::DuplicateAlias (ERROR:  table name "joins" specified more than once
+):
+  
+app/models/category.rb:87:in `exec'
+app/models/category.rb:87:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:15:05 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 24ms (Views: 0.9ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:15:11 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/test" for 127.0.0.1 at 2018-05-14 11:15:11 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"test"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::DuplicateAlias (ERROR:  table name "joins" specified more than once
+):
+  
+app/models/category.rb:87:in `exec'
+app/models/category.rb:87:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:15:35 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 36ms (Views: 0.6ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 11:15:39 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/test" for 127.0.0.1 at 2018-05-14 11:15:39 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"test"}
+Completed 200 OK in 3ms (Views: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:32:00 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 29ms (Views: 12.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:32:06 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 7ms (Views: 5.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:32:11 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:33:32 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:36:35 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:37:04 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+
+

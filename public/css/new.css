@@ -28,3 +28,23 @@
     font-size: 25px;
     font-weight: 800;
 }
+
+
+.category_box{
+    border:1px solid #DCDCDC;
+    /* margin-top: 10px; */
+    width: 300px;
+    text-align: center;
+}
+
+
+.discussion_box{
+    border:1px solid #DCDCDC;
+    width: 300px;
+    text-align: center;
+}
+
+h3{
+    color:slategray;
+    font-weight: 750;
+}

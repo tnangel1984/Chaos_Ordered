@@ -90,10 +90,16 @@ class Category
                         categories.join_id  AS catJoin,
                         joins.join_id,
                         joins.user_id,
-                        joins.article_id
+                        joins.article_id,
+                        articles.title,
+                        articles.id
+
+
                     FROM categories
                     LEFT JOIN joins
                         ON categories.join_id=joins.join_id
+                    LEFT JOIN articles
+                        ON articles.id=joins.article_id
                     WHERE category_list='#{query}'
                     AND user_id= #{$currentuser_id}
 

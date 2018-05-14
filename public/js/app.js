@@ -25,9 +25,10 @@ class APImethods extends React.Component{
         this.submitForm=this.submitForm.bind(this)
         this.sendUserId=this.sendUserId.bind(this)
         this.sendQuery=this.sendQuery.bind(this)
+        this.submitQuery=this.submitQuery.bind(this)
 
         this.toggleState =this.toggleState.bind(this)
-        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0, myArticles:{},
+        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0, myArticles:{}, queryEntry:"",
             homeVisible:true, myArticlesVisible:false, showFormVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
@@ -341,12 +342,19 @@ showForm(){
 //              SEARCH
 // ===============================================
 
-sendUserId(event){
+submitQuery(event){
+    event.preventDefault();
+    
+        this.setState({queryEntry:event.srcElement[0].value},
+        ()=>{this.sendUserId(this.state.queryEntry)}
+    )
+}
+sendUserId(query){
     console.log("sendUserId executed");
-    console.log(event.srcElement[0].value);
+
     fetch('/categoriesusercat/'+ this.state.userID)
     .then(response=>response.json())
-    .then(response=>{console.log("userId passed"); this.sendQuery(event.srcElement[0].value)})
+    .then(response=>{console.log("userId passed"); this.sendQuery(query)})
     .catch(error=>console.log(error))
 }
 
@@ -398,6 +406,7 @@ toggleState(str1, str2, str3){
                  createCategory={this.createCategory}
                  submitForm={this.submitForm}
                  sendUserId={this.sendUserId}
+                 submitQuery={this.submitQuery}
 
                  />
              : ""}

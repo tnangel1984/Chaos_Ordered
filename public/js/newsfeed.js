@@ -13,12 +13,10 @@ class Newsfeed extends React.Component{
                         {this.props.headlines.map((headline, index)=>{
                             return <div className = "box card article_container ">
 
-
-
                                         <a href={headline.url}>
                                             <h2 className=" card-header-title headline">{headline.title}</h2>
                                         </a>
-                            
+
                                 <div>
                                         <div className ="img_container">
                                            <img className="card-image is-horizontal-center img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
