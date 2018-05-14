@@ -1,28 +1,21 @@
 class Nav extends React.Component{
 
     render(){
-        return <div className="nav_container master">
+        return <div className=" navbar is-dark nav_container master">
 
-            <ul className="nav nav-pills">
-            <h1 className="nav nav1">Chaos_Ordered</h1>
-            <h1 className="nav nav1">POWEREDBY</h1>
-            <li className="nav nav2">
-                <li className="nav-item">
-                        <a
-                        className="nav-link active"
-                        href="#" onClick={()=>this.props.toggleState('homeVisible','myArticlesVisible','loginVisible')}>Home</a>
-                </li>
-                <li className="nav-item">
-                        <a className="nav-link active" href="#"
 
-                         onClick={()=>{this.props.toggleState('myArticlesVisible','homeVisible','loginVisible')}}>MyArticles</a>
-                </li>
-                <li className="nav-item">
-                        <a className="nav-link active" href="#" onClick={()=>this.props.toggleState('loginVisible','homeVisible','myArticlesVisible')}>Login</a>
-                </li>
-            </li>
-            </ul>
+            <h1 className="navbar-brand title1 nav nav1">Chaos_Ordered</h1><br/>
+
+            <div className="navbar-end">
+                <a
+                className=" navbar-item nav-link active"
+                href="#" onClick={()=>this.props.toggleState('homeVisible','myArticlesVisible','loginVisible')}>Home</a>
+
+                <a className=" navbar-item nav-link active"
+                href="#" onClick={()=>{this.props.toggleState('myArticlesVisible','homeVisible','loginVisible')}}>MyArticles</a>
+
+                <a className="navbar-item nav-link active" href="#" onClick={()=>this.props.toggleState('loginVisible','homeVisible','myArticlesVisible')}>Login</a>
+            </div>
         </div>
     }
 }
-// this.props.getMyArticles();

@@ -373,7 +373,7 @@ toggleState(str1, str2, str3){
     render(){
         // console.log(this.state.articles);
 
-        return<div className="master">
+        return<div>
             <Nav
             getMyArticles={this.getMyArticles}
             toggleState={this.toggleState}
