@@ -2,50 +2,46 @@
 class Newsfeed extends React.Component{
     render(){
         // console.log(this.props.headlines)
-        return <div className="container-fluid master master_container">
-                <div className="row ">
-                    <Discussion className="col-3"/>
+        return <div>
+                <div className="columns box row ">
 
-                    <div className="col-6 headline_containter">
+                    <div className="column box" >
+                        <Discussion className="col-3"/>
+                    </div>
+
+                    <div className="column is-three-fifths  box col-6 headline_containter">
                         {this.props.headlines.map((headline, index)=>{
-                            return <div className = "article_container ">
-
-                                <div className="headline_container">
-
-                                <a href={headline.url}>
-                                    <h3 className="headline">{headline.title}</h3>
-                                </a>
-
-                                <div className ="img_container">
-                                   <img className="img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
-                                </div>
-
-                                <div className="summary">{headline.description}
-                                </div>
-
-                                <div className ="category_bar">
-
-                                    <p>Economics</p>
-                                       <p>Poverty</p>
-                                       <p>Custom</p>
-
-                                </div>
+                            return <div className = "box card article_container ">
 
 
 
-                                    <div className ="action_bar">
-                                       <button>bump</button>
-                                       <button>store</button>
-                                       <button>comment</button>
-                                       <button onClick={()=>{this.props.duplicateArticles(headline.title, headline)}}>share</button>
-                                    </div>
+                                        <a href={headline.url}>
+                                            <h2 className=" card-header-title headline">{headline.title}</h2>
+                                        </a>
+                            
+                                <div>
+                                        <div className ="img_container">
+                                           <img className="card-image is-horizontal-center img-fluid text-center img" alt="Reponsive image" src={headline.urlToImage}></img>
+                                        </div>
+
+                                        <div className="card-content summary">{headline.description}
+                                        </div>
+
+                                        <div className ="action_bar">
+                                           <button>like</button>
+                                           <button>share</button>
+                                           <button>comment</button>
+                                           <button onClick={()=>{this.props.duplicateArticles(headline.title, headline)}}>save</button>
+                                        </div>
+
                                 </div>
                             </div>
                         })}
                     </div>
 
-                    <Category className="col-3"/>
-
+                    <div className="column box">
+                        <Category className="col-3"/>
+                    </div>
                 </div>
 
 
@@ -76,3 +72,10 @@ class Newsfeed extends React.Component{
 // </div>
 
 // this.props.createArticle(headline),
+//
+//
+// <div className ="category_bar">
+//     <p>Economics</p>
+//        <p>Poverty</p>
+//        <p>Custom</p>
+// </div>

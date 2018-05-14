@@ -2,21 +2,21 @@ class MyArticles extends React.Component {
     render(){
         console.log(this.props.myArticles);
         console.log(this.props.showFormVisible);
-        return <div>
-            <h1>MY ARTICLES</h1>
-            <form onSubmit={()=>{this.props.sendUserId(event)}}>
-                <label>Filter My Articles: </label><input type="text"  placeholder="Search By Category"></input>
-                <button type="submit">Find</button>
+        return <div className="container">
+            <h1 className="title is-3 is-centered">MY ARTICLES</h1>
+            <form className=" box field has-addons control" onSubmit={()=>{this.props.sendUserId(event)}}>
+                <input  className="input" type="text"  placeholder="Search By Category"></input>
+                <button className="button" type="submit">Find</button>
             </form>
 
             {this.props.myArticles.map((article,index)=>{
-                return <div >
-                <h3>{article.title}</h3>
+                return <div className="box card" >
+                <h3 className="card-title">{article.title}</h3>
                 <a href="#" onClick={this.props.showForm}>Categorize</a>
                 {this.props.showFormVisible ?
                     <section>
-                    <form onSubmit={()=>{this.props.submitForm(event, article.join_id)}}>
-                        <input type="text" placeholder="Category 1" id="category1" value={this.props.category1}
+                    <form className="" onSubmit={()=>{this.props.submitForm(event, article.join_id)}}>
+                        <input  className="" type="text" placeholder="Category 1" id="category1" value={this.props.category1}
                         onChange={()=>{this.props.createCategory(event)}}
                         />
                         <button type="submit">+</button>
