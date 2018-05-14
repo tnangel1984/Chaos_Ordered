@@ -217,7 +217,8 @@ createJoin(articleID){
         user_id: this.state.userArticle.user_id,
         article_id: articleID
     }})
-    this.addJoin(this.state.userArticle)
+    this.addJoinDB
+    (this.state.userArticle)
 }
 
 addJoinDB(userArticle){

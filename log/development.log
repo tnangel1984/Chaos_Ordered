@@ -37394,3 +37394,195 @@ Processing by UsersController#show as */*
 Completed 200 OK in 2ms (Views: 1.2ms)
 
 
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:13:37 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 357ms (Views: 0.8ms)
+
+
+Started GET "/articleduplicates/Drake%20announces%20new%20tour%20with%20Migos,%20includes%20stops%20in%20Atlanta" for 127.0.0.1 at 2018-05-14 09:13:54 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Drake announces new tour with Migos, includes stops in Atlanta"}
+Completed 200 OK in 4ms (Views: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-14 09:13:54 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Drake announces new tour with Migos, includes stops in Atlanta", "author"=>"Nelson Hicks", "url"=>"https://www.wsbtv.com/entertainment/things-2-do/drake-announces-new-tour-with-migos-includes-stops-in-atlanta/749090961", "image_url"=>"https://media-ncd.cmgdigital.com/photo/2017/11/16/What_You_Didn___t_Know_About_Drake_0_9990390_ver1.0_640_360.jpg", "source_name"=>"Wsbtv.com", "summary"=>"Get ready, Atlanta. Drake and the Migos announced a new tour with two stops at Philips Arena.", "date_published"=>"2018-05-14T12:47:23Z", "article"=>{"title"=>"Drake announces new tour with Migos, includes stops in Atlanta", "author"=>"Nelson Hicks", "url"=>"https://www.wsbtv.com/entertainment/things-2-do/drake-announces-new-tour-with-migos-includes-stops-in-atlanta/749090961", "image_url"=>"https://media-ncd.cmgdigital.com/photo/2017/11/16/What_You_Didn___t_Know_About_Drake_0_9990390_ver1.0_640_360.jpg", "source_name"=>"Wsbtv.com", "summary"=>"Get ready, Atlanta. Drake and the Migos announced a new tour with two stops at Philips Arena.", "date_published"=>"2018-05-14T12:47:23Z"}}
+Completed 200 OK in 4ms (Views: 0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:15:00 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.2ms)
+
+
+Started GET "/articleduplicates/Drake%20announces%20new%20tour%20with%20Migos,%20includes%20stops%20in%20Atlanta" for 127.0.0.1 at 2018-05-14 09:15:05 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Drake announces new tour with Migos, includes stops in Atlanta"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:15:27 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.4ms)
+
+
+Started GET "/articleduplicates/Drake%20announces%20new%20tour%20with%20Migos,%20includes%20stops%20in%20Atlanta" for 127.0.0.1 at 2018-05-14 09:15:30 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Drake announces new tour with Migos, includes stops in Atlanta"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:15:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.8ms)
+
+
+Started GET "/articleduplicates/Drake%20announces%20new%20tour%20with%20Migos,%20includes%20stops%20in%20Atlanta" for 127.0.0.1 at 2018-05-14 09:15:35 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Drake announces new tour with Migos, includes stops in Atlanta"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-14 09:15:35 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>"20", "join"=>{"user_id"=>2, "article_id"=>"20"}}
+Completed 200 OK in 5ms (Views: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:15:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:17:17 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 21ms (Views: 9.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:18:01 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 9ms (Views: 5.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:19:08 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 8ms (Views: 5.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:19:37 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 7ms (Views: 4.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 09:21:11 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"123", "join_id"=>"12", "category"=>{"category_list"=>"123", "join_id"=>"12"}}
+Completed 200 OK in 6ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:21:17 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 3.4ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 09:21:59 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:22:00 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:24:13 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 3.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:24:36 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 3.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:25:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 3.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:26:40 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:27:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 3.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:28:05 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:28:27 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:29:25 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:29:53 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:30:13 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:31:17 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:31:46 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 09:31:54 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
