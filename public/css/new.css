@@ -1,0 +1,30 @@
+
+.card-image{
+    display: flex;
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.img-fluid{
+    margin:0 auto;
+    text-align: center;
+    padding: 0 5% ;
+    width: 100%;
+
+}
+
+.action_bar, .card-header-title{
+    text-align: center;
+}
+
+.card-header-title{
+    font-size: 18px;
+}
+
+.navbar-brand{
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: 800;
+}

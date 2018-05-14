@@ -65,4 +65,16 @@ class Join
         )
         return {deleted:true}
     end
+
+    # def self.duplicates(id1, id2)
+    #     results= DB.exec(
+    #         <<-SQL
+    #             SELECT *
+    #             FROM joins
+    #             WHERE id1 = #{user_id}
+    #             AND id2 =#{article_id}
+    #         SQL
+    #     )
+    #     results.first["join_id"]
+    # end
 end

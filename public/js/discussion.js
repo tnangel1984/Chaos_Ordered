@@ -15,7 +15,7 @@ class Discussion extends React.Component{
             <div className="discussion_box">
                 <h3>Environment </h3>
                 <ul className="discussion_topic">
-                    <li>item1</li>
+                    <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</li>
                     <li>item2</li>
                     <li>item3</li>
                     <li>item4</li>
@@ -25,7 +25,7 @@ class Discussion extends React.Component{
             <div className="discussion_box">
                 <h3>Restaurants NYC  </h3>
                 <ul className="discussion_topic">
-                    <li>item1</li>
+                    <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</li>
                     <li>item2</li>
                     <li>item3</li>
                     <li>item4</li>
@@ -35,7 +35,7 @@ class Discussion extends React.Component{
             <div className="discussion_box">
                 <h3>Recipes  <img src="#"></img></h3>
                 <ul className="previewList">
-                    <li>item1</li>
+                    <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....</li>
                     <li>item2</li>
                     <li>item3</li>
                     <li>item4</li>

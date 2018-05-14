@@ -1,5 +1,5 @@
 class Article
-    attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary, :categories
+    attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary, :categories, :join_id
 
     DB = PG.connect(host:"localhost", port:5432, dbname: 'chaos_ordered')
 
@@ -13,6 +13,7 @@ class Article
         @date_published=opts["date_published"]
         @summary=opts["summary"]
         @categories=opts["categories"]
+        @join_id=opts["join_id"]
     end
 
 
@@ -79,19 +80,24 @@ class Article
                 WHERE title = '#{title}'
             SQL
         )
+        p title
+
     # return results
     # concat_ws(',', title, author)='#{title}'
     # results[0]["concat_ws"]
-
+        response=[]
         resArray=[]
         results.map{|result| resArray.push(result)}
-    
+ p resArray.length
         if resArray.length == 0
-            return "add article"
-
+            p "add article"
+            response.push("add article")
+            return response
         else
-            return results.first["id"]
+            p results.first["id"]
+             response.push(results.first["id"])
+             return response
         end
-        return resArray.length
+    return results
     end
 end
