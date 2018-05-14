@@ -58,20 +58,43 @@ class Category
     end
 
     def self.findusercat(userid)
-        results= DB.exec(
-            <<-SQL
-                SELECT categories.category_list,
-                    categories.join_id  AS catJoin,
-                    joins.join_id,
-                    joins.user_id,
-                    joins.article_id
-                FROM categories
-                LEFT JOIN joins
-                    ON categories.join_id=joins.join_id
-                WHERE user_id =#{userid}
-            SQL
-        )
-        return results
+
+        $currentuser_id=userid
+        # results= DB.exesc(
+        #     <<-SQL
+        #         SELECT categories.category_list,
+        #             categories.join_id  AS catJoin,
+        #             joins.join_id,
+        #             joins.user_id,
+        #             joins.article_id
+        #         FROM categories
+        #         LEFT JOIN joins
+        #             ON categories.join_id=joins.join_id
+        #         WHERE user_id =#{userid}
+        #     SQL
+        # )
+
     end
+
+
+        def self.returncats(query)
+
+            results= DB.exec(
+                <<-SQL
+                    SELECT categories.category_list,
+                        categories.join_id  AS catJoin,
+                        joins.join_id,
+                        joins.user_id,
+                        joins.article_id
+                    FROM categories
+                    LEFT JOIN joins
+                        ON categories.join_id=joins.join_id
+                    WHERE category_list='#{query}'
+                    AND user_id= #{$currentuser_id}
+
+                SQL
+            )
+            return results
+        end
 end
 # -- WHERE user_id=#{user_id}

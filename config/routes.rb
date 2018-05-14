@@ -26,6 +26,7 @@ Rails.application.routes.draw do
     put '/categories/:id', to: 'categories#update'
     delete '/categories/:id', to: 'categories#delete'
     get '/categoriesusercat/:userid', to: 'categories#finduser'
+    get '/categoriesquery/:query', to: 'categories#catquery'
 
 
     get '/joins', to: 'joins#index'

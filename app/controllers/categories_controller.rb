@@ -24,4 +24,8 @@ class CategoriesController < ApplicationController
     def finduser
         render json: Category.findusercat(params["userid"])
     end
+
+    def catquery
+        render json: Category.returncats(params["query"])
+    end
 end

@@ -36944,3 +36944,171 @@ Processing by CategoriesController#finduser as */*
 Completed 200 OK in 7ms (Views: 0.4ms)
 
 
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:35:16 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NoMethodError (undefined method `returncats' for Category:Class
+Did you mean?  returnCats):
+  
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:35:55 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at end of input
+LINE 11: 
+         ^
+):
+  
+app/models/category.rb:81:in `exec'
+app/models/category.rb:81:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/categoriesusercat/3" for 127.0.0.1 at 2018-05-14 05:36:37 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"3"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:36:41 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 500 Internal Server Error in 8ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "berkshire" does not exist
+LINE 9:                     WHERE category_list =Berkshire
+                                                 ^
+):
+  
+app/models/category.rb:81:in `exec'
+app/models/category.rb:81:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:37:11 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 500 Internal Server Error in 9ms
+
+
+  
+PG::UndefinedColumn (ERROR:  column "berkshire" does not exist
+LINE 9:                     WHERE category_list =Berkshire
+                                                 ^
+):
+  
+app/models/category.rb:82:in `exec'
+app/models/category.rb:82:in `returncats'
+app/controllers/categories_controller.rb:29:in `catquery'
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:37:30 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 200 OK in 26ms (Views: 0.5ms)
+
+
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:37:47 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 200 OK in 9ms (Views: 0.3ms)
+
+
+Started GET "/categoriesquery/test" for 127.0.0.1 at 2018-05-14 05:38:09 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"test"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/Waymo" for 127.0.0.1 at 2018-05-14 05:38:38 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Waymo"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/categoriesusercat/4" for 127.0.0.1 at 2018-05-14 05:38:55 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"4"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/Waymo" for 127.0.0.1 at 2018-05-14 05:38:57 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Waymo"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-14 05:40:13 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 22ms (Views: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-14 05:40:35 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 22ms (Views: 1.1ms)
+
+
+Started GET "/categoriesusercat/4" for 127.0.0.1 at 2018-05-14 05:41:30 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"4"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:42:04 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 200 OK in 4ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:42:05 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/categoriesusercat/4" for 127.0.0.1 at 2018-05-14 05:42:07 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"4"}
+Completed 200 OK in 0ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:42:09 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 05:42:40 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/Berkshire" for 127.0.0.1 at 2018-05-14 05:42:43 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Berkshire"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/Waymo" for 127.0.0.1 at 2018-05-14 05:42:49 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Waymo"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/categoriesusercat/1" for 127.0.0.1 at 2018-05-14 05:43:19 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"1"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/Waymo" for 127.0.0.1 at 2018-05-14 05:43:32 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"Waymo"}
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
