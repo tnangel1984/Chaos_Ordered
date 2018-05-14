@@ -10,7 +10,8 @@ class MyArticles extends React.Component {
             </form>
 
             {this.props.myArticles.map((article,index)=>{
-                return <div className="box card" >
+                return <div className="tile">
+                <div className="box card" >
                 <h3 className="card-title">{article.title}</h3>
                 <a href="#" onClick={this.props.showForm}>Categorize</a>
                 {this.props.showFormVisible ?
@@ -37,6 +38,7 @@ class MyArticles extends React.Component {
 
                 :""}
                 <img onClick={()=>this.props.getArticle(article)} src={article.image_url} className="thumbnail"></img>
+                </div>
                 </div>
             })}
 
