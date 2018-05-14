@@ -56,4 +56,22 @@ class Category
         results= DB.exec("DELETE FROM categories WHERE id=#{id};")
         return {deleted:true}
     end
+
+    def self.findusercat(userid)
+        results= DB.exec(
+            <<-SQL
+                SELECT categories.category_list,
+                    categories.join_id  AS catJoin,
+                    joins.join_id,
+                    joins.user_id,
+                    joins.article_id
+                FROM categories
+                LEFT JOIN joins
+                    ON categories.join_id=joins.join_id
+                WHERE user_id =#{userid}
+            SQL
+        )
+        return results
+    end
 end
+# -- WHERE user_id=#{user_id}

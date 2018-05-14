@@ -20,4 +20,8 @@ class CategoriesController < ApplicationController
     def delete
         render json: Category.delete(params["id"])
     end
+
+    def finduser
+        render json: Category.findusercat(params["userid"])
+    end
 end
