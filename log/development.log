@@ -35816,3 +35816,688 @@ Processing by UsersController#show as */*
 Completed 200 OK in 21ms (Views: 0.9ms)
 
 
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:03:36 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 24ms (Views: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:06:25 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:07:10 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:26 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:26 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:26 -0400
+Processing by CategoriesController#create as HTML
+Processing by CategoriesController#create as HTML
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"", "join_id"=>0}
+  Parameters: {"category"=>"", "join_id"=>0}
+  Parameters: {"category"=>"", "join_id"=>0}
+Completed 500 Internal Server Error in 3ms
+
+
+Completed 500 Internal Server Error in 2ms
+
+
+  
+Completed 500 Internal Server Error in 3ms
+
+
+  
+PG::UnableToSend ():
+  
+PG::UnableToSend (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:32 -0400
+Processing by CategoriesController#create as HTML
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:32 -0400
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:32 -0400
+Processing by CategoriesController#create as HTML
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:32 -0400
+Completed 500 Internal Server Error in 1ms
+
+
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:32 -0400
+Processing by CategoriesController#create as HTML
+  
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Processing by CategoriesController#create as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+  
+Completed 500 Internal Server Error in 1ms
+
+
+  
+Completed 500 Internal Server Error in 1ms
+
+
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:08:33 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Completed 500 Internal Server Error in 26ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:13 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:13 -0400
+Processing by CategoriesController#create as HTML
+Processing by CategoriesController#create as HTML
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:13 -0400
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:13 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:13 -0400
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Processing by CategoriesController#create as HTML
+Processing by CategoriesController#create as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Completed 500 Internal Server Error in 1ms
+
+
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+  
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+  
+Completed 500 Internal Server Error in 1ms
+
+
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+Completed 500 Internal Server Error in 1ms
+
+
+Completed 500 Internal Server Error in 1ms
+
+
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+  
+  
+  
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+  
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:14 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:14 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:14 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:14 -0400
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:14 -0400
+Processing by CategoriesController#create as HTML
+Processing by CategoriesController#create as HTML
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self Driving Car Crash"}
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Completed 500 Internal Server Error in 5ms
+
+
+Completed 500 Internal Server Error in 5ms
+
+
+Completed 500 Internal Server Error in 1ms
+
+
+Completed 500 Internal Server Error in 1ms
+
+
+  
+  
+  
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+  
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:15 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Completed 500 Internal Server Error in 22ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:15 -0400
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Completed 500 Internal Server Error in 36ms
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:16 -0400
+  
+Processing by CategoriesController#create as HTML
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:16 -0400
+  Parameters: {"category"=>"Self Driving Car Crash"}
+  
+Processing by CategoriesController#create as HTML
+Completed 500 Internal Server Error in 1ms
+
+
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:16 -0400
+  Parameters: {"category"=>"Self Driving Car Crash"}
+  
+Processing by CategoriesController#create as HTML
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+Completed 500 Internal Server Error in 1ms
+
+
+  Parameters: {"category"=>"Self Driving Car Crash"}
+  
+  
+Completed 500 Internal Server Error in 1ms
+
+
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:17 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Completed 500 Internal Server Error in 4ms
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:17 -0400
+  
+Processing by CategoriesController#create as HTML
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:17 -0400
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Processing by CategoriesController#create as HTML
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:17 -0400
+  
+Completed 500 Internal Server Error in 1ms
+
+
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Processing by CategoriesController#create as HTML
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+Completed 500 Internal Server Error in 1ms
+
+
+  Parameters: {"category"=>"Self Driving Car Crash"}
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:17 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self Driving Car Crash"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-13 23:09:18 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Self-Driving Car Crash"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:10:03 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:11:12 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:12:03 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:12:40 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:13:22 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:19:46 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:21:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 23:23:17 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:14:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 12ms (Views: 4.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:18:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:19:28 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:20:05 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:23:12 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:25:22 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:27:31 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:31:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:32:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:35:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:42:07 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:42:46 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:43:28 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:47:19 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:48:56 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:49:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 03:51:12 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>"Waymo", "join_id"=>"4"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('', )
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:53:33 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 03:53:54 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"Waymo", "join_id"=>"4", "category"=>{"category_list"=>"Waymo", "join_id"=>"4"}}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near ")"
+LINE 2:                 VALUES ('Waymo', 4)
+                                    ^
+):
+  
+app/models/category.rb:33:in `exec'
+app/models/category.rb:33:in `create'
+app/controllers/categories_controller.rb:13:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 03:54:21 -0400
+Processing by CategoriesController#create as */*
+  Parameters: {"category_list"=>"test", "join_id"=>10, "category"=>{"category_list"=>"test", "join_id"=>10}}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-14 03:54:39 -0400
+Processing by CategoriesController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2018-05-14 03:55:08 -0400
+Processing by CategoriesController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 03:55:32 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"Waymo", "join_id"=>"4", "category"=>{"category_list"=>"Waymo", "join_id"=>"4"}}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 03:55:40 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"Self Driving Cars", "join_id"=>"4", "category"=>{"category_list"=>"Self Driving Cars", "join_id"=>"4"}}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 03:55:43 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"Self Driving Car Crash", "join_id"=>"4", "category"=>{"category_list"=>"Self Driving Car Crash", "join_id"=>"4"}}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 03:56:14 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+

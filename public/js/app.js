@@ -47,7 +47,7 @@ class APImethods extends React.Component{
             category3:"",
             categories:[],
             category:{
-                category:"",
+                category_list:"",
                 join_id:0
             }
         }
@@ -253,24 +253,42 @@ createCategory(event){
         console.log(this.state.category2);
         console.log(this.state.category3);
     })
+    console.log(this.state.category1);
+    console.log(this.state.category2);
+    console.log(this.state.category3);
 
 }
 
-submitForm(event){
-    event.preventDefault();
-    const catArr = this.state.categories
-    catArr.push(this.state.category1, this.state.category2, this.state.category3)
-    console.log(this.state.categories);
+submitForm(event, joinid){
+ event.preventDefault();
 
-    catArr.map((cat)=>{})
-    //     category:{
-    //         category:cat,
-    //         join_id:this.state.recordJoinID
-    //     }
-    // })
+console.log(event.srcElement[0].value);
+ this.setState({category:{
+     category_list: event.srcElement[0].value,
+     join_id:joinid
+ }}, ()=>{this.addCategoryDB(this.state.category)})
+
+console.log(this.state.category);
+
+
+ // })
+
+// console.log(this.state.category1, this.state.category2, this.state.category3);
+//     console.log(joinid);
+//     event.preventDefault();
+//     const catArr = this.state.categories
+//     catArr.push(this.state.category1, this.state.category2, this.state.category3)
+//     console.log(this.state.categories);
+//
+//
+//         this.setState({category:{category:this.state.category1, join_id: joinid}},()=>{console.log(this.state.category)})
+//         this.setState({category:{category:this.state.category2, join_id: joinid}},()=>{console.log(this.state.category)})
+//         this.setState({category:{category:this.state.category3, join_id: joinid}},()=>{console.log(this.state.category)})
 }
 
 addCategoryDB(category){
+
+    console.log(category);
      fetch('/categories', {
          body: JSON.stringify(category),
          method: 'POST',
