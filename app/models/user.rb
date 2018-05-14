@@ -83,7 +83,8 @@ class User
                                 "source_name"=>result["source_name"],
                                 "summary"=>result["summary"],
                                 "date_published"=>result["date_published"],
-                                "categories" => []
+                                "categories" => [],
+                                "join_id"=>result["join_id"]
                             })
 
                             last_article_id=result["article_id"]
@@ -154,7 +155,8 @@ end
                                 "source_name"=>result["source_name"],
                                 "summary"=>result["summary"],
                                 "date_published"=>result["date_published"],
-                                "categories" =>[]
+                                "categories" =>[],
+                                "join_id"=>result["join_id"]
                             })
                         last_article_id = result["article_id"]
                     end

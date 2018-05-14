@@ -1,5 +1,5 @@
 class Article
-    attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary, :categories
+    attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary, :categories, :join_id
 
     DB = PG.connect(host:"localhost", port:5432, dbname: 'chaos_ordered')
 
@@ -13,6 +13,7 @@ class Article
         @date_published=opts["date_published"]
         @summary=opts["summary"]
         @categories=opts["categories"]
+        @join_id=opts["join_id"]
     end
 
 

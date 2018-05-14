@@ -19,10 +19,16 @@ class APImethods extends React.Component{
         this.createCategory = this.createCategory.bind(this)
         this.addCategoryDB=this.addCategoryDB.bind(this)
         this.deleteCategory=this.deleteCategory.bind(this)
-        this.getUser=this.getUser.bind(this)
+
+        this.getMyArticles=this.getMyArticles.bind(this)
+        this.showForm=this.showForm.bind(this)
+        this.submitForm=this.submitForm.bind(this)
+        this.sendUserId=this.sendUserId.bind(this)
+        this.sendQuery=this.sendQuery.bind(this)
+
         this.toggleState =this.toggleState.bind(this)
-        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0,
-            homeVisible:false, myArticlesVisible:true,
+        this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0, myArticles:{},
+            homeVisible:true, myArticlesVisible:false, showFormVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
@@ -38,8 +44,13 @@ class APImethods extends React.Component{
                 user_id:2,
                 article_id:0
             },
+
+            category1:"",
+            category2:"",
+            category3:"",
+            categories:[],
             category:{
-                category:"",
+                category_list:"",
                 join_id:0
             }
         }
@@ -47,7 +58,11 @@ class APImethods extends React.Component{
 
     componentDidMount(){
         // this.getArticles()
-        this.getHeadLines()
+        this.getHeadLines();
+        if (this.state.userID !=0) {
+            this.getMyArticles()}
+        else{""};
+        console.log(this.state.myArticles);
     }
 
 // ===============================================
@@ -234,16 +249,49 @@ addJoinDB(userArticle){
 //
     // DETERMING FLOW THROUGH OF JOIN ID ... AND HOW/WHERE IT'S SET... try to associate with individual article.
 
-createCategory(category){
-    this.setState({
-        category:{
-            category:category,
-            join_id:this.state.recordJoinID
-        }
+createCategory(event){
+
+    this.setState({[event.target.id]: event.target.value},()=>{
+        console.log(this.state.category1);
+        console.log(this.state.category2);
+        console.log(this.state.category3);
     })
+    console.log(this.state.category1);
+    console.log(this.state.category2);
+    console.log(this.state.category3);
+
+}
+
+submitForm(event, joinid){
+ event.preventDefault();
+
+console.log(event.srcElement[0].value);
+ this.setState({category:{
+     category_list: event.srcElement[0].value,
+     join_id:joinid
+ }}, ()=>{this.addCategoryDB(this.state.category)})
+
+console.log(this.state.category);
+
+
+ // })
+
+// console.log(this.state.category1, this.state.category2, this.state.category3);
+//     console.log(joinid);
+//     event.preventDefault();
+//     const catArr = this.state.categories
+//     catArr.push(this.state.category1, this.state.category2, this.state.category3)
+//     console.log(this.state.categories);
+//
+//
+//         this.setState({category:{category:this.state.category1, join_id: joinid}},()=>{console.log(this.state.category)})
+//         this.setState({category:{category:this.state.category2, join_id: joinid}},()=>{console.log(this.state.category)})
+//         this.setState({category:{category:this.state.category3, join_id: joinid}},()=>{console.log(this.state.category)})
 }
 
 addCategoryDB(category){
+
+    console.log(category);
      fetch('/categories', {
          body: JSON.stringify(category),
          method: 'POST',
@@ -267,18 +315,56 @@ console.log("delete");
 // ===============================================
 
 
-getUser(id){
-  fetch('/users/'+id)
+setMyArticles(foundArticles){
+     this.setState(
+         {myArticles: foundArticles.saved_articles},
+         ()=>{console.log(this.state.myArticles)}
+    )
+}
+
+getMyArticles(){
+    console.log("getMyArticles executed");
+  fetch('/users/'+this.state.userID)
   .then(response=>response.json())
-  .then(response=> console.log(response))
+  .then(foundArticles=>{this.setMyArticles(foundArticles)})
   .catch(error=>console.log(error))
 }
 
+showForm(){
+    console.log("showForm executed");
+    this.setState({showFormVisible: !this.state.showFormVisible})
+}
+
+
+// ===============================================
+//              SEARCH
+// ===============================================
+
+sendUserId(event){
+    console.log("sendUserId executed");
+    console.log(event.srcElement[0].value);
+    fetch('/categoriesusercat/'+ this.state.userID)
+    .then(response=>response.json())
+    .then(response=>{console.log("userId passed"); this.sendQuery(event.srcElement[0].value)})
+    .catch(error=>console.log(error))
+}
+
+sendQuery(query){
+    console.log("sendQuery executed");
+    console.log(query);
+    fetch('/categoriesquery/'+ query)
+    .then(response=>response.json())
+    .then(response=>console.log(response))
+    .catch(error=>console.log(error))
+}
 
 toggleState(str1, str2, str3){
-    str1 = true
-    str2 = false
-    str3 = false
+    console.log("toggleState executed");
+    this.setState({
+    [str1]: true,
+    [str2]: false,
+    [str3]: false
+    })
 }
 
 // ===============================================
@@ -288,18 +374,30 @@ toggleState(str1, str2, str3){
         // console.log(this.state.articles);
 
         return<div className="master">
-            <Nav toggleState={this.toggleState}/>
-            <Newsfeed
-                headlines={this.state.headlines}
-                createArticle={this.createArticle}
-                duplicateArticles={this.duplicateArticles}
+            <Nav
+            getMyArticles={this.getMyArticles}
+            toggleState={this.toggleState}
+
             />
+            {this.state.homeVisible ?
+                <Newsfeed
+                    headlines={this.state.headlines}
+                    createArticle={this.createArticle}
+                    duplicateArticles={this.duplicateArticles}
+                />
+            : ""
+            }
 
 
             {this.state.myArticlesVisible ?
                  <MyArticles
-                 articles={this.state.articles}
-                 getUser={this.getUser}
+                 myArticles={this.state.myArticles}
+                 showForm={this.showForm}
+                 showFormVisible={this.state.showFormVisible}
+                 createCategory={this.createCategory}
+                 submitForm={this.submitForm}
+                 sendUserId={this.sendUserId}
+
                  />
              : ""}
          </div>

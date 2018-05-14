@@ -24,12 +24,7 @@ class Newsfeed extends React.Component{
                                 </div>
 
                                 <div className ="category_bar">
-                                    <form>
-                                        <input type="text" placeholder="Category 1" value={this.props.category1}/>
-                                        <input type="text" placeholder="Category 2" value={this.props.category2}/>
-                                        <input type="text" placeholder="Category 3" value={this.props.category3}/>
-                                        <button type="submit"> Categorize</button>
-                                    </form>
+
                                     <p>Economics</p>
                                        <p>Poverty</p>
                                        <p>Custom</p>
