@@ -19,10 +19,13 @@ class APImethods extends React.Component{
         this.createCategory = this.createCategory.bind(this)
         this.addCategoryDB=this.addCategoryDB.bind(this)
         this.deleteCategory=this.deleteCategory.bind(this)
+
         this.getMyArticles=this.getMyArticles.bind(this)
+        this.showForm=this.showForm.bind(this)
+        this.submitForm=this.submitForm.bind(this)
         this.toggleState =this.toggleState.bind(this)
         this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0, myArticles:{},
-            homeVisible:true, myArticlesVisible:false,
+            homeVisible:true, myArticlesVisible:false, showFormVisible:false,
             oneArticleVisible:false,
             userRegVisible:false, loginVisible:false, userRegVisible:false,
             article:{
@@ -38,6 +41,11 @@ class APImethods extends React.Component{
                 user_id:2,
                 article_id:0
             },
+
+            category1:"",
+            category2:"",
+            category3:"",
+            categories:[],
             category:{
                 category:"",
                 join_id:0
@@ -238,13 +246,28 @@ addJoinDB(userArticle){
 //
     // DETERMING FLOW THROUGH OF JOIN ID ... AND HOW/WHERE IT'S SET... try to associate with individual article.
 
-createCategory(category){
-    this.setState({
-        category:{
-            category:category,
-            join_id:this.state.recordJoinID
-        }
+createCategory(event){
+
+    this.setState({[event.target.id]: event.target.value},()=>{
+        console.log(this.state.category1);
+        console.log(this.state.category2);
+        console.log(this.state.category3);
     })
+
+}
+
+submitForm(event){
+    event.preventDefault();
+    const catArr = this.state.categories
+    catArr.push(this.state.category1, this.state.category2, this.state.category3)
+    console.log(this.state.categories);
+
+    catArr.map((cat)=>{})
+    //     category:{
+    //         category:cat,
+    //         join_id:this.state.recordJoinID
+    //     }
+    // })
 }
 
 addCategoryDB(category){
@@ -286,6 +309,10 @@ getMyArticles(){
   .catch(error=>console.log(error))
 }
 
+showForm(){
+    console.log("showForm executed");
+    this.setState({showFormVisible: !this.state.showFormVisible})
+}
 
 toggleState(str1, str2, str3){
     console.log("toggleState executed");
@@ -321,6 +348,10 @@ toggleState(str1, str2, str3){
             {this.state.myArticlesVisible ?
                  <MyArticles
                  myArticles={this.state.myArticles}
+                 showForm={this.showForm}
+                 showFormVisible={this.state.showFormVisible}
+                 createCategory={this.createCategory}
+                 submitForm={this.submitForm}
 
                  />
              : ""}
