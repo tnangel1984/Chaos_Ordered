@@ -15,7 +15,7 @@ class Nav extends React.Component{
                 <li className="nav-item">
                         <a className="nav-link active" href="#"
 
-                         onClick={()=>{this.props.getMyArticles();this.props.toggleState('myArticlesVisible','homeVisible','loginVisible')}}>MyArticles</a>
+                         onClick={()=>{this.props.toggleState('myArticlesVisible','homeVisible','loginVisible')}}>MyArticles</a>
                 </li>
                 <li className="nav-item">
                         <a className="nav-link active" href="#" onClick={()=>this.props.toggleState('loginVisible','homeVisible','myArticlesVisible')}>Login</a>
@@ -25,3 +25,4 @@ class Nav extends React.Component{
         </div>
     }
 }
+// this.props.getMyArticles();

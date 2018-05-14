@@ -47,7 +47,11 @@ class APImethods extends React.Component{
 
     componentDidMount(){
         // this.getArticles()
-        this.getHeadLines()
+        this.getHeadLines();
+        if (this.state.userID !=0) {
+            this.getMyArticles()}
+        else{""};
+        console.log(this.state.myArticles);
     }
 
 // ===============================================
@@ -267,14 +271,18 @@ console.log("delete");
 // ===============================================
 
 
+setMyArticles(foundArticles){
+     this.setState(
+         {myArticles: foundArticles.saved_articles},
+         ()=>{console.log(this.state.myArticles)}
+    )
+}
+
 getMyArticles(){
     console.log("getMyArticles executed");
   fetch('/users/'+this.state.userID)
   .then(response=>response.json())
-  .then(foundArticles=>{
-      this.setState({myArticles:foundArticles})
-      console.log(this.state.myArticles);
-  })
+  .then(foundArticles=>{this.setMyArticles(foundArticles)})
   .catch(error=>console.log(error))
 }
 
@@ -313,7 +321,7 @@ toggleState(str1, str2, str3){
             {this.state.myArticlesVisible ?
                  <MyArticles
                  myArticles={this.state.myArticles}
-                 getUser={this.getUser}
+
                  />
              : ""}
          </div>

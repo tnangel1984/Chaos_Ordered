@@ -35543,3 +35543,69 @@ puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
 puma (3.11.4) lib/puma/server.rb:446:in `process_client'
 puma (3.11.4) lib/puma/server.rb:306:in `block in run'
 puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:46:23 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 403ms (Views: 0.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:46:35 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:48:34 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:49:26 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:52:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:53:37 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:54:15 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 20:57:26 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 8ms (Views: 3.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 21:05:09 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 7ms (Views: 3.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 21:06:01 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 7ms (Views: 3.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-13 21:06:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 2.2ms)
+
+
