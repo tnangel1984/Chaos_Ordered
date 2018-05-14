@@ -94,6 +94,7 @@ class Category
 
                 SQL
             )
+            p results
             return results
         end
 end

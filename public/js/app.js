@@ -23,6 +23,9 @@ class APImethods extends React.Component{
         this.getMyArticles=this.getMyArticles.bind(this)
         this.showForm=this.showForm.bind(this)
         this.submitForm=this.submitForm.bind(this)
+        this.sendUserId=this.sendUserId.bind(this)
+        this.sendQuery=this.sendQuery.bind(this)
+
         this.toggleState =this.toggleState.bind(this)
         this.state = {headlines:[], duplicate:{}, articlesDB:[], selectedArticle:{},  userID:2, recordJoinID:0, myArticles:{},
             homeVisible:true, myArticlesVisible:false, showFormVisible:false,
@@ -332,6 +335,29 @@ showForm(){
     this.setState({showFormVisible: !this.state.showFormVisible})
 }
 
+
+// ===============================================
+//              SEARCH
+// ===============================================
+
+sendUserId(event){
+    console.log("sendUserId executed");
+    console.log(event.srcElement[0].value);
+    fetch('/categoriesusercat/'+ this.state.userID)
+    .then(response=>response.json())
+    .then(response=>{console.log("userId passed"); this.sendQuery(event.srcElement[0].value)})
+    .catch(error=>console.log(error))
+}
+
+sendQuery(query){
+    console.log("sendQuery executed");
+    console.log(query);
+    fetch('/categoriesquery/'+ query)
+    .then(response=>response.json())
+    .then(response=>console.log(response))
+    .catch(error=>console.log(error))
+}
+
 toggleState(str1, str2, str3){
     console.log("toggleState executed");
     this.setState({
@@ -370,6 +396,7 @@ toggleState(str1, str2, str3){
                  showFormVisible={this.state.showFormVisible}
                  createCategory={this.createCategory}
                  submitForm={this.submitForm}
+                 sendUserId={this.sendUserId}
 
                  />
              : ""}

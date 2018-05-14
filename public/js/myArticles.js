@@ -3,7 +3,11 @@ class MyArticles extends React.Component {
         console.log(this.props.myArticles);
         console.log(this.props.showFormVisible);
         return <div>
-            <h1>test myApp</h1>
+            <h1>MY ARTICLES</h1>
+            <form onSubmit={()=>{this.props.sendUserId(event)}}>
+                <label>Filter My Articles: </label><input type="text"  placeholder="Search By Category"></input>
+                <button type="submit">Find</button>
+            </form>
 
             {this.props.myArticles.map((article,index)=>{
                 return <div >

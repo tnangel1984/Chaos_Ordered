@@ -24,7 +24,7 @@ class Newsfeed extends React.Component{
                                 </div>
 
                                 <div className ="category_bar">
-                                
+
                                     <p>Economics</p>
                                        <p>Poverty</p>
                                        <p>Custom</p>
