@@ -30,9 +30,9 @@ class MyArticles extends React.Component {
         </div>
     }
 }
-
-// onclick push form values into Create
 // pass joinID
+// onclick push form values into Create
+
 //categories with 3 separate categories
 //push values into...
 

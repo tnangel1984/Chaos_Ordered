@@ -35788,3 +35788,31 @@ Processing by UsersController#index as */*
 Completed 200 OK in 2ms (Views: 1.3ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-05-13 22:45:01 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 25ms (Views: 1.8ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-13 22:48:26 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 23ms (Views: 1.3ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-13 22:48:30 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-05-13 22:49:37 -0400
+Processing by UsersController#index as */*
+Completed 200 OK in 23ms (Views: 1.1ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-05-13 22:51:10 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 21ms (Views: 0.9ms)
+
+
