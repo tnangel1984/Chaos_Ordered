@@ -37,11 +37,16 @@ class MyArticles extends React.Component {
                         </form>
                         </section>
 
+
                     :""}
                 </div>
                     <img onClick={()=>this.props.getArticle(article)} src={article.image_url} className="img-fluid"></img>
 
+                    
+
+
                 </div>
+
                 </div>
             })}
 

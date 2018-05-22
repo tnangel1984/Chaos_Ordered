@@ -37956,3 +37956,414 @@ Processing by UsersController#show as */*
 Completed 200 OK in 4ms (Views: 1.3ms)
 
 
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:56:24 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 16ms (Views: 5.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:56:38 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:58:47 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:59:35 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 11:59:57 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 2.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 12:00:24 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 12:01:40 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 2.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 12:06:05 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 12:14:15 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started GET "/articleduplicates/Caged%20Tiger%20at%20Florida%20high%20school%20prom%20causes%20uproar" for 127.0.0.1 at 2018-05-14 12:56:43 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Caged Tiger at Florida high school prom causes uproar"}
+Completed 200 OK in 8ms (Views: 1.7ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-14 12:56:43 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Caged Tiger at Florida high school prom causes uproar", "author"=>"Brett Molina", "url"=>"https://www.usatoday.com/story/news/nation-now/2018/05/14/tiger-caged-florida-prom-causes-uproar/606700002/", "image_url"=>"https://www.gannett-cdn.com/-mm-/96cd27a48ca62b29f815294c148e25cf5872cc39/c=0-274-5391-3320&r=x1683&c=3200x1680/local/-/media/2018/05/14/USATODAY/USATODAY/636618839271763545-GettyImages-627540386.jpg", "source_name"=>"USA Today", "summary"=>"Students and parents of a Miami-area high school were angry after school officials allowed a caged tiger and other animals as part of a jungle-themed prom.", "date_published"=>"2018-05-14T14:58:00Z", "article"=>{"title"=>"Caged Tiger at Florida high school prom causes uproar", "author"=>"Brett Molina", "url"=>"https://www.usatoday.com/story/news/nation-now/2018/05/14/tiger-caged-florida-prom-causes-uproar/606700002/", "image_url"=>"https://www.gannett-cdn.com/-mm-/96cd27a48ca62b29f815294c148e25cf5872cc39/c=0-274-5391-3320&r=x1683&c=3200x1680/local/-/media/2018/05/14/USATODAY/USATODAY/636618839271763545-GettyImages-627540386.jpg", "source_name"=>"USA Today", "summary"=>"Students and parents of a Miami-area high school were angry after school officials allowed a caged tiger and other animals as part of a jungle-themed prom.", "date_published"=>"2018-05-14T14:58:00Z"}}
+Completed 200 OK in 16ms (Views: 1.7ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-14 12:56:43 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>22, "join"=>{"user_id"=>2, "article_id"=>22}}
+Completed 200 OK in 3ms (Views: 1.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 12:56:58 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 13ms (Views: 9.5ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 12:57:43 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"Tiger", "join_id"=>"15", "category"=>{"category_list"=>"Tiger", "join_id"=>"15"}}
+Completed 200 OK in 5ms (Views: 0.3ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 12:57:44 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"big cat", "join_id"=>"15", "category"=>{"category_list"=>"big cat", "join_id"=>"15"}}
+Completed 200 OK in 8ms (Views: 0.7ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-05-14 12:57:45 -0400
+Processing by CategoriesController#create as HTML
+  Parameters: {"category_list"=>"yellow eyes", "join_id"=>"15", "category"=>{"category_list"=>"yellow eyes", "join_id"=>"15"}}
+Completed 200 OK in 7ms (Views: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 12:57:49 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 3.2ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 12:58:22 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/cat" for 127.0.0.1 at 2018-05-14 12:58:22 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"cat"}
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 12:58:37 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/cat" for 127.0.0.1 at 2018-05-14 12:58:37 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"cat"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-14 13:05:15 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 9ms (Views: 6.5ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 13:05:19 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/categoriesquery/cat" for 127.0.0.1 at 2018-05-14 13:05:19 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"cat"}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 13:11:18 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/categoriesquery/big%20cate" for 127.0.0.1 at 2018-05-14 13:11:18 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"big cate"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesusercat/2" for 127.0.0.1 at 2018-05-14 13:11:20 -0400
+Processing by CategoriesController#finduser as */*
+  Parameters: {"userid"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/categoriesquery/big%20cat" for 127.0.0.1 at 2018-05-14 13:11:20 -0400
+Processing by CategoriesController#catquery as */*
+  Parameters: {"query"=>"big cat"}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-15 13:05:48 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 336ms (Views: 1.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-22 07:45:42 -0400
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 07:45:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 303ms (Views: 2.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:36:29 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 32ms (Views: 1.6ms)
+
+
+Started GET "/articleduplicates/What%20is%20'laze'?%20Toxic%20gas%20plume%20created%20by%20Hawaii%20volcano" for 127.0.0.1 at 2018-05-22 08:36:40 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {" Toxic gas plume created by Hawaii volcano"=>nil, "title"=>"What is 'laze'"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "laze"
+LINE 3:                 WHERE title = 'What is 'laze''
+                                                ^
+):
+  
+app/models/article.rb:83:in `exec'
+app/models/article.rb:83:in `duplicates'
+app/controllers/articles_controller.rb:25:in `duplicates'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:47:55 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 28ms (Views: 1.8ms)
+
+
+Started GET "/articleduplicates/What%20is%20'laze'?%20Toxic%20gas%20plume%20created%20by%20Hawaii%20volcano" for 127.0.0.1 at 2018-05-22 08:48:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/articleduplicates/What%20is%20'laze'"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:54:51 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 35ms (Views: 0.9ms)
+
+
+Started GET "/articleduplicates/Venezuelans%20contemplate%20their%20future%20after%20Maduro's%20win" for 127.0.0.1 at 2018-05-22 08:54:58 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Venezuelans contemplate their future after Maduro's win"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ... = 'Venezuelans contemplate their future after Maduro's win'
+                                                                 ^
+):
+  
+app/models/article.rb:83:in `exec'
+app/models/article.rb:83:in `duplicates'
+app/controllers/articles_controller.rb:25:in `duplicates'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:55:59 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 4ms (Views: 1.3ms)
+
+
+Started GET "/articleduplicates/Venezuelans%20contemplate%20their%20future%20after%20Maduro's%20win" for 127.0.0.1 at 2018-05-22 08:56:04 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Venezuelans contemplate their future after Maduro's win"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ... = 'Venezuelans contemplate their future after Maduro's win'
+                                                                 ^
+):
+  
+app/models/article.rb:83:in `exec'
+app/models/article.rb:83:in `duplicates'
+app/controllers/articles_controller.rb:25:in `duplicates'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:57:21 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started GET "/articleduplicates/Venezuelans%20contemplate%20their%20future%20after%20Maduro's%20win" for 127.0.0.1 at 2018-05-22 08:57:27 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Venezuelans contemplate their future after Maduro's win"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+PG::SyntaxError (ERROR:  syntax error at or near "s"
+LINE 3: ... = 'Venezuelans contemplate their future after Maduro's win'
+                                                                 ^
+):
+  
+app/models/article.rb:83:in `exec'
+app/models/article.rb:83:in `duplicates'
+app/controllers/articles_controller.rb:25:in `duplicates'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-05-22 08:57:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:57:34 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/articleduplicates/Venezuelans%20contemplate%20their%20future%20after%20Maduros%20win" for 127.0.0.1 at 2018-05-22 08:57:37 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Venezuelans contemplate their future after Maduros win"}
+Completed 200 OK in 6ms (Views: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-22 08:57:37 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Venezuelans contemplate their future after Maduros win", "author"=>"https://www.facebook.com/bbcnews", "url"=>"http://www.bbc.com/news/world-latin-america-44209531", "image_url"=>"https://ichef.bbci.co.uk/news/1024/branded_news/4AD5/production/_101675191_ec45f6a2-9f82-440b-b6cc-ed4117910033.jpg", "source_name"=>"Bbc.com", "summary"=>"With little hope of the country emerging from its economic crisis, many are packing up and leaving.", "date_published"=>"2018-05-22T11:27:48Z", "article"=>{"title"=>"Venezuelans contemplate their future after Maduros win", "author"=>"https://www.facebook.com/bbcnews", "url"=>"http://www.bbc.com/news/world-latin-america-44209531", "image_url"=>"https://ichef.bbci.co.uk/news/1024/branded_news/4AD5/production/_101675191_ec45f6a2-9f82-440b-b6cc-ed4117910033.jpg", "source_name"=>"Bbc.com", "summary"=>"With little hope of the country emerging from its economic crisis, many are packing up and leaving.", "date_published"=>"2018-05-22T11:27:48Z"}}
+Completed 200 OK in 12ms (Views: 0.3ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-22 08:57:37 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>23, "join"=>{"user_id"=>2, "article_id"=>23}}
+Completed 200 OK in 4ms (Views: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-05-22 08:58:21 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started GET "/articleduplicates/Mayor%20Libby%20Schaaf%20Act%20would%20imprison%20govt%20officials%20who%20warn%20about%20ICE%20raids" for 127.0.0.1 at 2018-05-22 08:58:29 -0400
+Processing by ArticlesController#duplicates as HTML
+  Parameters: {"title"=>"Mayor Libby Schaaf Act would imprison govt officials who warn about ICE raids"}
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-05-22 08:58:29 -0400
+Processing by ArticlesController#create as JSON
+  Parameters: {"title"=>"Mayor Libby Schaaf Act would imprison govt officials who warn about ICE raids", "author"=>"Lukas Mikelionis", "url"=>"http://www.foxnews.com/politics/2018/05/22/mayor-libby-schaaf-act-would-imprison-gov-t-officials-who-warn-about-ice-raids.html", "image_url"=>"http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/03/01/0/0/694940094001_5742950024001_5742918063001-vs.jpg?ve=1", "source_name"=>"Fox News", "summary"=>"A Republican lawmaker on Monday proposed a measure that would imprison government officials up to five years for obstructing the enforcement of federal laws.", "date_published"=>"2018-05-22T10:10:01Z", "article"=>{"title"=>"Mayor Libby Schaaf Act would imprison govt officials who warn about ICE raids", "author"=>"Lukas Mikelionis", "url"=>"http://www.foxnews.com/politics/2018/05/22/mayor-libby-schaaf-act-would-imprison-gov-t-officials-who-warn-about-ice-raids.html", "image_url"=>"http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/03/01/0/0/694940094001_5742950024001_5742918063001-vs.jpg?ve=1", "source_name"=>"Fox News", "summary"=>"A Republican lawmaker on Monday proposed a measure that would imprison government officials up to five years for obstructing the enforcement of federal laws.", "date_published"=>"2018-05-22T10:10:01Z"}}
+Completed 200 OK in 8ms (Views: 0.5ms)
+
+
+Started POST "/joins" for 127.0.0.1 at 2018-05-22 08:58:29 -0400
+Processing by JoinsController#create as HTML
+  Parameters: {"user_id"=>2, "article_id"=>24, "join"=>{"user_id"=>2, "article_id"=>24}}
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+

@@ -1,6 +1,6 @@
 class Article
     attr_reader :id, :title, :author, :url, :image_url, :source_name, :date_published, :summary, :categories, :join_id
-    
+
     if(ENV['DATABASE_URL'])
       uri = URI.parse(ENV['DATABASE_URL'])
       DB = PG.connect(uri.hostname, uri.port, nil, nil, uri.path[1..-1], uri.user, uri.password)
@@ -79,6 +79,7 @@ class Article
     end
 
     def self.duplicates(title)
+        p title
         results= DB.exec(
             <<-SQL
                 SELECT *

@@ -103,8 +103,10 @@ getHeadLines(){
 //0.Check if duplicate article 1.Capture Inputs into setState 2. Fetch send POST httlp request & capture response (data) 3. PUSH data onto articles array
             // checks first whether article title already exists in database. True: returns article ID, False: creates new article and returns article ID
     duplicateArticles(title, article){
-        console.log("duplicateArticles executed");
-        fetch('/articleduplicates/'+ title)
+        let modified=
+        // console.log(modified);
+        // console.log("duplicateArticles executed");
+        fetch('/articleduplicates/'+ title.replace(/\'/g, ""))
         .then(response=>response.json())
         .then(response=>{
             this.setState({duplicate:response});
@@ -344,7 +346,7 @@ showForm(){
 
 submitQuery(event){
     event.preventDefault();
-    
+
         this.setState({queryEntry:event.srcElement[0].value},
         ()=>{this.sendUserId(this.state.queryEntry)}
     )
