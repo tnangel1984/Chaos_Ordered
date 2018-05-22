@@ -4,8 +4,11 @@
  Heroku:
  https://dashboard.heroku.com/apps/chaos-ordered
  Objectives:  
-  1.) Up to date news information
-  2.) User favorites with Categorization.
+  1.) Up to date news information (Top Headlines)
+  2.) User saves favorite articles
+  3.) Users can add categories to articles.
+
+Future Vision.
   3.) Platform for comments & discourse.
 
 
